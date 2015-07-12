@@ -1,0 +1,13 @@
+.qglviewer.xml
+*tempt*
+*.b
+*.out
+*/*tempt*
+*/*/*tempt*
+Bin
+bin
+build
+Lib
+lib
+*.vtk
+*log*

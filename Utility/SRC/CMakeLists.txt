@@ -1,8 +1,0 @@
-SET(HEADFILE_DEST /usr/local/include/utility)
-SET(LIB_DEST /usr/local/lib/)
-
-ADD_SUBDIRECTORY(Math)
-ADD_SUBDIRECTORY(UI)
-ADD_SUBDIRECTORY(Common)
-ADD_SUBDIRECTORY(ElasticModel)
-# ADD_SUBDIRECTORY(Cuda)
