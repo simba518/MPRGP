@@ -1,0 +1,44 @@
+
+\begin{figure}
+  \centering
+  \subfigure[iteration curves] { \label{fig:b}
+    \includegraphics[width=0.4\textwidth]{#iter_curves#}
+  }
+  \subfigure[constraints] { \label{fig:a}
+    \includegraphics[width=0.4\textwidth]{#con_nodes#}
+  }
+  %% \subfigure[time statistics] { \label{fig:a}
+  %%   \includegraphics[width=0.4\textwidth]{#time_fig#}
+  %% }
+  \caption{statics of #init_file_name#}
+  \label{en_f}
+\end{figure}
+
+\begin{center}
+  \begin{tabular}{|l*{8}{|l}}
+    \hline
+	file & #init_file_name# \\ \hline
+	nodes & #number_of_nodes# \\ \hline
+	$h$ & #time_step# \\ \hline
+	tets & #number_of_tets# \\ \hline
+	$T$ & #number_of_frames# \\ \hline
+	$t_{all}$ & #total-time# \\ \hline
+    %% $p_{in}$ & #input_plane# \\ \hline
+	%% $p_{re}$ & #reserved_plane# \\ \hline
+	cg & #total-cg# \\ \hline
+	exp & #total-exp# \\ \hline
+	prop & #total-prop# \\ \hline
+    con nodes $\times 3$ & #con-nodes# \\ \hline
+    mprgp it & #mprgp-it# \\ \hline
+	mprgp tol & #mprgp-tol# \\ \hline
+    newton outter it & #newton-outter-it# \\ \hline
+	newton outter tol & #newton-outter-tol# \\ \hline
+	newton inner it & #newton-inner-it# \\ \hline
+	newton inner tol & #newton-inner-tol# \\ \hline
+    non-convergent & #non-convergent# \\ \hline
+    failed lambda & #failed-lambda# \\ \hline
+    failed lag grad & #failed-lag-grad# \\ \hline
+    static friction & #static-friction# \\ \hline
+    kinetic friction & #kinetic-friction# \\ \hline
+  \end{tabular}
+\end{center}

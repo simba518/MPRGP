@@ -1,0 +1,8 @@
+varying vec4 v;
+
+void main()
+{
+	gl_Position=ftransform();
+	v=gl_Position;
+	gl_TexCoord[0]=gl_MultiTexCoord0;
+}

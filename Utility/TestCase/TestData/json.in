@@ -1,0 +1,21 @@
+{
+
+"init_file_dir":"~/Workspace/",
+
+"print_initfile": false,
+
+"filename" : "f.txt",
+
+"filenames": ["f0.txt", "f1.txt", "f2.txt"],
+
+"intnumber": 80,
+
+"floatnumber": 100.0,
+
+"intArray" : [1,2,3],
+
+"strArray": ["a","bc"],
+
+"array_array": [ [1], [2,3], [4,5,6] ]
+
+}

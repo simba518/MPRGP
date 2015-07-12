@@ -1,0 +1,6 @@
+*groups 1
+
+*MATERIAL, NAME=GROUP_0
+*ELASTIC
+1e5, 0.4
+*DENSITY 100

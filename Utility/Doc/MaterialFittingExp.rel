@@ -1,0 +1,60 @@
+;; RefTeX parse info file
+;; File: /home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex
+;; User: simba (simba)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/home/simba/Workspace/Utility/Doc/")
+
+(label-numbers)
+
+(bof "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex")
+
+(toc "toc" "    1 Formulation" "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil 2 "1" "\\section{Formulation}" 522)
+
+("all" "e" "\\min_{G,l}(\\phi_e(G,l)+\\mu_{g}\\phi_s(G)+\\mu_{l}\\phi_s(l)) " "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+("smooth" "e" "\\phi_s(x) = \\frac{1}{2}\\sum_{(i,j)_{n}}(x_i-x_j)^2V_{i,j}, \\mbox{ for all tet. }i " "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+("diag_k" "e" "\\phi_e(G,l) = \\frac{1}{2}\\sum_{i=1}^{r}\\mu_i^2\\|{W}^T_iK(G,l){W}_i-({W}^T_i\\tilde{M}{W}_i)\\lambda_i\\" "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+("diag_k" "e" "% \\phi_e(G,l) = \\frac{1}{2}\\|{W}^TK(G,l){W}-({W}^T\\tilde{M}{W})\\Lambda\\|_F^2 % " "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" t)
+
+("motion_eq" "e" "\\tilde{M}\\ddot{u} + K(G,l)u = 0 " "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+("" "e" "\\phi_e(G,l)=\\frac{1}{2}\\|{W'}^TK(G,l){W'}-({W'}^T\\tilde{M}{W'})\\Lambda\\|_F^2 " "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+(toc "toc" "          1.0.0.1 Scale $\\Lambda$." "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil 5 "1.0.0.1" "\\paragraph{Scale $\\Lambda$.}" 2545)
+
+("scale_la" "e" "\\Lambda = \\frac{\\rho_0 h^2}{\\rho h_0^2}\\tilde{\\Lambda} " "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+(toc "toc" "          1.0.0.2 Penalty for each mode." "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil 5 "1.0.0.2" "\\paragraph{Penalty for each mode.}" 3044)
+
+("mu-i" "e" "\\mu_i = \\frac{\\|z_i\\|_F^2}{\\|f_i\\|_F^2 \\lambda_i^2} " "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+(toc "toc" "          1.0.0.3 Constrained nodes." "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil 5 "1.0.0.3" "\\paragraph{Constrained nodes.}" 3563)
+
+("fig_coarse" "f" "Results for the coarse beam model with different penalties." "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+(toc "toc" "    2 Experiments and Analysis" "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil 2 "2" "\\section{Experiments and Analysis}" 4305)
+
+(toc "toc" "      2.1 Coarse mesh with non-smooth material" "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil 3 "2.1" "\\subsection{Coarse mesh with non-smooth material}" 4340)
+
+("fig_fine" "f" "Results for the fine beam model." "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil)
+
+(toc "toc" "      2.2 Fine mesh with non-smooth material" "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil 3 "2.2" "\\subsection{Fine mesh with non-smooth material}" 5779)
+
+(toc "toc" "      2.3 Fine mesh with smooth material" "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex" nil 3 "2.3" "\\subsection{Fine mesh with smooth material}" 6178)
+
+(eof "/home/simba/Workspace/Utility/Doc/MaterialFittingExp.tex")
+))
+

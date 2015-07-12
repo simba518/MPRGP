@@ -1,0 +1,46 @@
+set(PROGRAM
+mainDFOReducedBeam
+mainDFOReducedBeamGeom
+mainDinosaur
+mainBodyTest
+mainDistance
+mainBoundingBox
+mainDRDF
+mainCGeometryCD2D
+#mainGeometry2D
+mainCGeometryCD
+#mainGeometry3D
+#mainGeometryCD
+mainCorotationalBeamCGeom2D
+mainGUI
+mainCorotationalBeam
+#mainNarrowCollCD
+mainCorotationalBeamGeom
+mainRaycast
+mainCoupledRSBeam
+mainReducedBeam
+mainCoupledRSBeamLargeForce
+mainReducedBeamGeom
+mainRSBeam
+mainCubatureRSBeam10
+mainRSBeamLargeForce
+mainCubatureRSBeam20
+mainSelfCD
+#mainCubatureRSBeamGeom
+mainSerializationTest
+mainDFOReducedBeamCGeom2D
+mainWarppedReducedBeam
+mainDFOReducedBeamCGeom
+)
+
+foreach(exe ${PROGRAM})
+    add_executable(${exe} ${exe}.cpp)
+    target_link_libraries(${exe}
+    pzr-fem
+    DEC
+    ${GLUT_LIBRARIES}
+    ${GLEW_LIBRARIES}
+    ${OPENGL_LIBRARIES}
+    ${Boost_LIBRARIES}
+    ${ARPACK_LIBRARIES})
+endforeach()

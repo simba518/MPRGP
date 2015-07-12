@@ -1,0 +1,67 @@
+\documentclass[annual]{acmsiggraph}
+\TOGonlineid{45678}
+\TOGvolume{0}
+\TOGnumber{0}
+\TOGarticleDOI{1111111.2222222}
+\TOGprojectURL{}
+\TOGvideoURL{}
+\TOGdataURL{}
+\TOGcodeURL{}
+
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsthm}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\newcommand{\E}[1]{\mathbf{#1}}
+\newcommand{\FPP}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand{\FPPTWO}[2]{\frac{\partial{#1}^2}{\partial^2{#2}}}
+\newcommand{\FDD}[2]{\frac{d{#1}}{d{#2}}}
+\newcommand{\TWO}[2]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{cc}{#1} & {#2}\end{array}\right)}
+\newcommand{\TWOC}[2]{\left(\begin{array}{c}#1 \\ #2\end{array}\right)}
+\newcommand{\TWOR}[2]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{cc}{#1}^T & {#2}^T\end{array}\right)^T}
+\newcommand{\TWORC}[4]{\left(\begin{array}{cc}#1 & #2 \\ #3 & #4\end{array}\right)}
+\newcommand{\THREEC}[3]{\left(\begin{array}{c}#1 \\ #2 \\ #3\end{array}\right)}
+\newcommand{\THREER}[3]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{ccc}{#1}^T & {#2}^T & {#3}^T\end{array}\right)^T}
+\newcommand{\FOURC}[4]{\left(\begin{array}{c}#1 \\ #2 \\ #3 \\ #4\end{array}\right)}
+\newcommand{\FOURR}[4]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{cccc}{#1}^T & {#2}^T & {#3}^T & {#4}^T\end{array}\right)^T}
+\newcommand{\SIXC}[6]{\left(\begin{array}{c}#1 \\ #2 \\ #3 \\ #4 \\ #5 \\ #6\end{array}\right)}
+\newcommand{\SIXR}[6]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{cccc}{#1}^T & {#2}^T & {#3}^T & {#4}^T {#5}^T {#6}^T\end{array}\right)^T}
+\newcommand{\MTT}[4]{\left(\begin{array}{cc}#1 & #2 \\ #3 & #4\end{array}\right)}
+\newtheorem{myDef}{Definition}
+\newtheorem{myTheo}{Theorem}
+
+\title{A Simple Friction Model}
+\author{Siwang Li}
+\pdfauthor{Siwang Li}
+
+\begin{document}
+\maketitle
+
+\section{A Simple Friction Model}
+Let's consider one point collides with a surface with normal $\E{n}$. Suppose the velocity of this point is $\E{v}$, and the external force is $\E{f}$, the static and kinetic friction coefficients are $\mu_s$ and $\mu_k$ respectively, and the mignitude for the normal pressure force is $\lambda$. Then, the friction force of this point is
+\[
+\E{f}_r = 
+\left\{ \begin{array}{rl}
+  -\min(\|\E{f}_t\|, \lambda \mu_k)\frac{\E{v}_t}{\|\E{v}_t\|}, &\E{v}_t \neq 0\\
+  &\\
+  -\min(\|\E{f}_t\|, \lambda \mu_s)\frac{\E{f}_t}{\|\E{f}_t\|}, & \E{v}_t = 0
+\end{array} \right.\nonumber
+\]
+where $\E{f}_t$ and $\E{v}_t$ is calculated by using
+\begin{eqnarray*}
+ \E{f}_t &=& \E{f} - (\E{n} \cdot \E{f})\E{n}\\
+ \E{v}_t &=& \E{v} - (\E{n} \cdot \E{v})\E{n}
+\end{eqnarray*}
+respectively. Finally, we need to update the force $\E{f}$ using $\E{f}_r$, i.e
+\[
+\E{f} = \E{f} + \E{f}_r
+\]
+{\color{red}{And when $\|\E{f}_t\| < \lambda \mu$, we also need to set $\E{v} = \E{v}-\E{v}_t$.}}
+
+\bibliographystyle{acmsiggraph}
+\bibliography{template}
+\end{document}

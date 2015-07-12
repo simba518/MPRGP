@@ -1,0 +1,304 @@
+\documentclass[9pt,twocolumn]{extarticle}
+
+\usepackage[hmargin=0.5in,tmargin=0.5in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+\usepackage{cleveref}
+\usepackage{color}
+\newcommand{\TODO}[1]{\textcolor{red}{#1}}
+
+\newcommand{\FPP}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\argmin}{\operatornamewithlimits{arg\ min}}
+\author{Siwang Li}
+
+\title{Full Space Material Fitting}
+
+%% document begin here
+\begin{document}
+\maketitle
+
+\setlength{\parskip}{0.5ex}
+
+\section{Summary} 
+Given the modal basis $W$, eigenvalues $\Lambda$, and mass matrix ${M}$, we
+propose an approach to recover the elastic material for all
+tetrahedrons. Currently, we build our formulation based on two observations:
+firstly, the motion in full space of the object with optimal material should be
+reduced onto the subspace described by $W$ and $\Lambda$; Secondly, the material
+should be smooth. Experiments demonstrate that
+\begin{itemize}
+\item The results significantly impacts by the penalty for the smooth item. When
+  we choose a large enough penalty, we can usually obtain materials with desired
+  distribution, but with much smaller magnitude. 
+\item A penalty matrix for each mode can improve the result (see figure
+  \ref{exp2_cmp_c}).
+\item If we further fix the Poisson's ratio, and optimize for Young's parameter
+  only, the results would be better (see figure \ref{exp1_smooth_GL} and figure
+  \ref{exp1_smooth_E}).
+\item For the fine model with a large number of tetrahedrons, it is costly to
+  compute the hessian matrix, and we optimize the problem by using gradient
+  only, and sometimes this method failed to convergent.
+\item Currently, The best results we can obtained for the beam model with
+  non-smooth material in our paper is given in figure
+  \ref{exp2_opt_fine_ns}. There is two problems for this result: firstly, the
+  resulting material is too soft; Secondly, distribution of the Poisson's ratio
+  is far from the ground truth.
+\end{itemize}
+
+Several ways are worth to try to improve the results: firstly, use a Laplace
+operator for the smooth item; Secondly, fix the Poisson's ratio, and optimize
+for Young's parameter only (but why?); Thirdly, find a more robust numerical
+method for solving the problem for large model; Finally, introduce additional
+constraints to ensure that the major motion of the model with optimal material
+is similar to the motion described by $W$ and $\Lambda$.
+
+\begin{figure}[htb]
+  \centering
+  \newcommand{\PicCNS}[1]{
+    \includegraphics[width=0.15\textwidth]{./figures/exp2_non_smooth_fine_GL_mu#1.png}}
+  \begin{tabular}{@{}ccc@{}}
+    \PicCNS{-4} & \PicCNS{1} & \PicCNS{50}\\
+    \PicCNS{-4-v} & \PicCNS{1-v} & \PicCNS{50-v}\\
+    (a) $\mu=10^{-4}$ & (b) $\mu=1$ & (c) $\mu=50$
+  \end{tabular}\vspace*{-1mm}
+  \caption{Results for the fine beam with non-smooth material used in our
+    paper. Here, we set $x=(G,l)$.}
+  \label{exp2_opt_fine_ns}
+\end{figure}
+
+\section{Formulation}
+Given modal basis $W$, eigenvalues $\Lambda$, and mass matrix ${M}$, we solve
+for the elastic material $x$ for all tetrahedrons using this formulation
+\begin{equation} \label{all}
+  \min_{x}(\phi_e(x)+\mu\phi_s(x))
+\end{equation}
+\[
+\mbox{subject to }  x_{min} \le x_i\le x_{max}
+\]
+where $\mu$ are some penalty parameters, and
+\begin{equation} \label{smooth}
+  \phi_s(x) = \frac{1}{2}\sum_{(i,j)_{n}}(x_i-x_j)^2\tilde{V}_{i,j}, \mbox{ for all
+    tet. }i
+\end{equation}
+which indicates that, the material $x$ should be smooth, where $(i,j)_{n}$
+represents a neighbor tetrahedron pair, and
+$\tilde{V}_{i,j}=\frac{1}{4}(V_i+V_j)$ with $V_i$ is the volume of tetrahedron
+$i$. In our experiments, we define $x=(G,l)$ or $x=E$, where
+$G=(G_1,\cdots,G_{tet})$, $l=(l_1,\cdots,l_{tet})$ are the Shear modulus, Lame's
+first parameter and Young's parameter for each tetrahedron respectively. When we
+define $x=E$, we also assume that the Poisson's ratio $v$ are given.
+
+Suppose $z(t)$ is the solution of the following reduced motion equation
+\begin{equation} \label{red_meq}
+  \ddot{z} + \Lambda z = 0
+\end{equation}
+for given $\Lambda, W$. Then for the optimal material, we require $z(t)$ to
+satisfy
+\begin{equation} \label{full_meq_red}
+  (W^TMW)\ddot{z} + (W^TK(x)W) z = 0
+\end{equation}
+If $\det(W^TMW) > 0$, then this requirement is satisfied if and only if
+\begin{equation} \label{cond_1}
+  W^TK(x)W = (W^TMW) \Lambda
+\end{equation}
+Thus we define 
+\begin{eqnarray}\label{dk}
+  \phi_e(x) &=& \frac{1}{2}\|{W}^TK(x){W}-({W}^T{M}{W})\Lambda\|_C^2\\
+  &=&\frac{1}{2}\sum_{i=1}^{r}\sum_{j=1}^{r}C_{i,j}^2\|{W}^T_iK(x){W}_j-({W}^T_i{M}{W}_j)\lambda_j\|_F^2
+  \nonumber
+\end{eqnarray}
+Here, $C$ is a penalty matrix for each mode.
+
+\paragraph{Scale $\Lambda$.}
+In our experiments, we assume that the density is uniform, while $\rho$ and
+$\rho_0$ are the density for the reduced material optimization and the desired
+density for material recovering respectively. Suppose that $h$ is the time step
+for reduced material optimization, $h_0$ is the time step for generating the
+input animation, while the optimized diagonal stiffness matrix is
+$\tilde{\Lambda}$, then we compute
+\begin{equation} \label{scale_la}
+  \Lambda = \frac{\rho_0 h^2}{\rho h_0^2}\tilde{\Lambda}
+\end{equation}
+For the beam model in our paper, we use $\rho_0=100, \rho=1, h_0=0.04$ and
+$h=1$. 
+
+\paragraph{Penalty for each mode.}
+The modes used to recover the full space material should have large
+displacements and small control forces, and the modes with smaller frequency is
+also much desirable than those with larger frequency. With these in
+consideration, we compute the penalty $\mu_i$ for each mode using
+\begin{equation} \label{mu-i}
+  \mu_i = \frac{\|z_i\|_F^2}{\|f_i\|_F^2 \lambda_i^2}
+\end{equation}
+Then we define
+\begin{equation} \label{mu-i}
+  C_{i,j} = \min(\mu_i, \mu_j)
+\end{equation}
+where $z_i, f_i$ are the optimized reduced displacements and control forces of
+mode $i$ respectively.
+
+\paragraph{Constrained nodes.}
+In all the experiments, the left end of the beam is fixed, and for these
+constrained nodes, we first remove the corresponding columns and rows from
+$\tilde{K}, \tilde{M}$, and remove the corresponding rows in $W$, then use
+them to solve for $G$ and $l$.
+
+\begin{figure}[htb]
+  \centering
+  \newcommand{\Pic}[1]{
+    \includegraphics[width=0.14\textwidth]{./figures/exp1_smooth_#1_E.png}}
+  \begin{tabular}{@{}ccc@{}}
+    \Pic{real} &
+    \Pic{mu0} &
+    \Pic{mu-4} \\
+    (a) ground truth &
+    (b) $\mu=10^{-4}$.&
+    (c) $\mu=0$.
+  \end{tabular}\vspace*{-1mm}
+  \caption{Results for the coarse beam model with smooth material, and optimize
+    for $x=(G,l)$.}
+  \label{exp1_smooth_GL}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \newcommand{\Pic}[1]{
+    \includegraphics[width=0.24\textwidth]{./figures/exp1_smooth_#1_E.png}}
+  \begin{tabular}{@{}cc@{}}
+    \Pic{E_mu0} & \Pic{E_mu-4}\\
+    (a) $\mu=0$ & (b) $\mu=10^{-4}$
+  \end{tabular}\vspace*{-1mm}
+  \caption{Results for the coarse beam model with smooth material, and fix
+    $v=0.45$, optimize for $x=E$.}
+  \label{exp1_smooth_E}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \newcommand{\Pic}[1]{
+    \includegraphics[width=0.14\textwidth]{./figures/exp1_non_smooth_#1.png}}
+  \begin{tabular}{@{}ccc@{}}
+    \Pic{real} & \Pic{GL_mu-4} & \Pic{E_mu-4}\\
+    (a) ground truth & (b) $x=(G,l)$ & (c) $x=E$
+  \end{tabular}\vspace*{-1mm}
+  \caption{Results for the coarse beam model with non-smooth material. We use
+    $\mu=10^{-4}$ to produce these results.}
+  \label{exp1_non_smooth_E}
+\end{figure}
+
+\section{Experiments and Analysis}
+\subsection{Experiment 1}
+We generate $W$ and $\Lambda$ using Modal Analysis for different models with
+non-uniform Young's parameter $E_0$ and uniform Poisson's ratio $v_0$, and
+density $\rho_0$, then solve for eq. (\ref{all}) using IPOPT to recover the
+elastic material. In these experiments, we set $C_{i,j}=1$. Following are the
+details.
+
+\begin{itemize}
+\item Figure \ref{exp1_smooth_GL} and figure \ref{exp1_smooth_E} are the results
+  of a coarse beam model with smooth material. It can be seen that, optimize for
+  $x=E$ produce better results than using $x=(G,l)$. We also notice that, the
+  hessian matrix $\frac{\partial^2{\phi_e}}{\partial^2{x}}$ is ill conditioning,
+  and if we don't use hessian information in the optimization, the optimization
+  convergent very slow even use the ground truth material as the initial value.
+
+\item The results of a coarse beam model with non-smooth material is shown in
+  figure \ref{exp1_non_smooth_E}, which demonstrate that this method can produce
+  results that are similar to the ground truth for object with non-smooth
+  material. However, the magnitude of the resulting material are significantly
+  different from the ground truth material. In particular, the material of some
+  tetrahedrons are very soft. Here, we set $x_{min}=0.01$ as the lower bound in
+  eq. (\ref{all}), and if we set smaller $x_{min}$, the smallest material in
+  figure \ref{exp1_non_smooth_E} will also be much smaller.
+
+\item The results for a fine beam model with smooth and non-smooth material are
+  shown in figure \ref{exp1_smooth_fine}. As the computation of
+  $\frac{\partial^2{\phi_e}}{\partial^2{x}}$ too costly, we use IPOPT to
+  optimize it without using hessian information, and use the ground truth
+  material as the initial value. When $\mu=10^{-6}$, the solution is not
+  convergent. For $\mu=10^{2}$, the solution is convergent, but the results are
+  significantly different from the ground truth. Thus, for large model, we need
+  to find a more robust numerical approach.
+\end{itemize}
+
+\begin{figure}[htb]
+  \centering
+  \newcommand{\Pic}[1]{
+    \includegraphics[width=0.14\textwidth]{./figures/exp1_smooth_fine_#1.png}}
+  \newcommand{\PicNS}[1]{
+    \includegraphics[width=0.14\textwidth]{./figures/exp1_non_smooth_fine_#1.png}}
+  \begin{tabular}{@{}ccc@{}}
+    \Pic{real} & \Pic{E_mu-6} & \Pic{E_mu100}\\
+    (a) ground truth & (b) $\mu=10^{-6}$ & (c) $\mu=10^{2}$\\
+    \PicNS{real} & \PicNS{GL_mu-6} & \PicNS{GL_mu100}\\
+    (d) ground truth & (e) $\mu=10^{-6}$ & (f) $\mu=10^{2}$
+  \end{tabular}\vspace*{-1mm}
+  \caption{Results for the fine beam model with smooth (top row) and
+    non-smooth (bottom row) material, where we fix $v=v_0$, and optimize for
+    $x=E$.}
+  \label{exp1_smooth_fine}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \newcommand{\PicCNS}[1]{
+    \includegraphics[width=0.14\textwidth]{./figures/exp2_non_smooth_E_mu#1.png}}
+  \newcommand{\PicFNS}[1]{
+    \includegraphics[width=0.14\textwidth]{./figures/exp2_non_smooth_E_mu#1.png}}
+  \newcommand{\PicF}[1]{
+    \includegraphics[width=0.14\textwidth]{./figures/exp2_smooth_fine_E_mu#1.png}}
+  \begin{tabular}{@{}ccc@{}}
+    \PicCNS{-8} & \PicCNS{-2} & \PicCNS{100}\\
+    (a) $\mu=10^{-8}$ & (b) $\mu=10^{-2}$ & (c) $\mu=10^{2}$\\
+    \PicF{-10} & \PicF{-6} & \PicF{-2}\\
+    (d) $\mu=10^{-10}$ & (e) $\mu=10^{-6}$ & (f) $\mu=10^{-2}$
+  \end{tabular}\vspace*{-1mm}
+  \caption{Results for the different beam model using the optimized $W$,
+    $\Lambda$ as input. From top to bottom row: results for the coarse model
+    with non-smooth material and fine model with smooth material. The ground
+    truth material for these model can be found in previous figures.}
+  \label{exp2_opt}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \newcommand{\PicCNS}[1]{
+    \includegraphics[width=0.2\textwidth]{./figures/exp2_non_smooth_E_mu#1.png}}
+  \begin{tabular}{@{}cc@{}}
+    \PicCNS{-2} & \PicCNS{-2-c1}\\
+    (a) using mode penalty & (b) without mode penalty
+  \end{tabular}\vspace*{-1mm}
+  \caption{Comparison of the results with and without using mode penalty matrix
+    $C$. In both experiments we use $\mu=10^{-2}$ and set $x=E$.}
+  \label{exp2_cmp_c}
+\end{figure}
+
+\subsection{Experiment 2}
+For $W$ and $\Lambda$ obtained from reduced material optimization, solve
+eq. (\ref{all}) to obtain the results. For the coarse model we use the hessian
+information, while for the fine model we do not. The ground truth material for
+these experiments can be found in figure \ref{exp1_non_smooth_E}(a),
+\ref{exp1_smooth_fine}(a) and \ref{exp1_smooth_fine}(d).
+
+\begin{itemize}
+\item We check the results for different models using different penalty $\mu$
+  (see figure \ref{exp2_opt}). We fix Poisson's ratio $v$, and optimize for
+  $x=E$. The penalty $\mu$ significantly impacts the results. When we increase
+  $\mu$, the magnitude of the material will be smaller, and a Laplace method can
+  be used to avoid such problem. For the fine beam model with smooth material,
+  we can obtain desired results by using $\mu=10^{-6}$.
+\item Figure \ref{exp2_cmp_c} show that, the mode penalty matrix $C$ can improve
+  the results. We have also compared the results with other penalty $\mu$, and
+  observed the similar results. 
+\item Finally, we give the results for the fine beam model with non-smooth
+  material used in our paper in figure \ref{exp2_opt_fine_ns}. Here, we optimize
+  for $x=(G,l)$, and convert $E=1$, $v=0.45$ to $G$, $l$ as the initial
+  value. We can obtain similar material distribution for large $\mu$, however
+  with much smaller magnitude. Another observation is that, the distribution of
+  the Poisson's ration $v$ is opposite to the Young's parameter $E$.
+\end{itemize}
+
+\end{document}

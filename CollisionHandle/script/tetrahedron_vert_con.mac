@@ -1,0 +1,36 @@
+/*compute the function value and gradient of the collision constraints between a tetrahedron and an vertex.*/
+
+kill(all)$
+
+for i: 0 thru 4 step 1 do x[i](v) := transpose(matrix( makelist(v[j], j, i*3+1, i*3+3) ))$
+
+G(v) := matrix(list_matrix_entries(x[1](v))-list_matrix_entries(x[4](v)),
+	 list_matrix_entries(x[2](v))-list_matrix_entries(x[4](v)),
+	 list_matrix_entries(x[3](v))-list_matrix_entries(x[4](v)))$
+
+D(d) := matrix([d[1]-d[4], d[2]-d[4], d[3]-d[4]])$
+
+c(v, d) := ratsimp( trigsimp( (D(d) . trigsimp(invert(G(v)))) . (x[0](v)-x[4](v)) - d[4] ) )$
+
+grad(v, d) := ''(jacobian([c(v,d)], [ v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10], v[11], v[12], v[13], v[14], v[15] ] ) )$
+
+vx: makelist(concat(vx,i), i, 0, 14)$
+dx: makelist(concat(dx,i), i, 0, 3)$
+c_result : [r1]$
+c_result[1]: c(vx, dx)$
+
+grad_result: ratsimp( trigsimp (grad(vx, dx)) )$
+grad_result_list : makelist(concat(gx,i), i, 1, 15)$
+for i:1 thru 15 step 1 do (
+  grad_result_list[i] : grad_result[1][i]
+  )$
+
+/* generate fortran code */
+load("f90")$
+/* f90( optimize(c_result) ); */
+f90( optimize(grad_result_list) );
+
+/* test case */
+/* y: [0,0,0, 1,0,0, 0,1,0, 0,0,1, 1,1,0];
+p: makelist(i, i, 1, 4);
+c(y, p); */

@@ -1,0 +1,157 @@
+\documentclass[annual]{acmsiggraph}
+\TOGonlineid{45678}
+\TOGvolume{0}
+\TOGnumber{0}
+\TOGarticleDOI{1111111.2222222}
+\TOGprojectURL{}
+\TOGvideoURL{}
+\TOGdataURL{}
+\TOGcodeURL{}
+
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsthm}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\newcommand{\E}[1]{\mathbf{#1}}
+\newcommand{\FPP}[2]{\frac{\partial{#1}}{\partial{#2}}}
+\newcommand{\FPPTWO}[2]{\frac{\partial{#1}^2}{\partial^2{#2}}}
+\newcommand{\FDD}[2]{\frac{d{#1}}{d{#2}}}
+\newcommand{\TWO}[2]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{cc}{#1} & {#2}\end{array}\right)}
+\newcommand{\TWOC}[2]{\left(\begin{array}{c}#1 \\ #2\end{array}\right)}
+\newcommand{\TWOR}[2]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{cc}{#1}^T & {#2}^T\end{array}\right)^T}
+\newcommand{\TWORC}[4]{\left(\begin{array}{cc}#1 & #2 \\ #3 & #4\end{array}\right)}
+\newcommand{\THREEC}[3]{\left(\begin{array}{c}#1 \\ #2 \\ #3\end{array}\right)}
+\newcommand{\THREER}[3]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{ccc}{#1}^T & {#2}^T & {#3}^T\end{array}\right)^T}
+\newcommand{\FOURC}[4]{\left(\begin{array}{c}#1 \\ #2 \\ #3 \\ #4\end{array}\right)}
+\newcommand{\FOURR}[4]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{cccc}{#1}^T & {#2}^T & {#3}^T & {#4}^T\end{array}\right)^T}
+\newcommand{\SIXC}[6]{\left(\begin{array}{c}#1 \\ #2 \\ #3 \\ #4 \\ #5 \\ #6\end{array}\right)}
+\newcommand{\SIXR}[6]{\left(\setlength{\arraycolsep}{1pt}\begin{array}{cccc}{#1}^T & {#2}^T & {#3}^T & {#4}^T {#5}^T {#6}^T\end{array}\right)^T}
+\newcommand{\MTT}[4]{\left(\begin{array}{cc}#1 & #2 \\ #3 & #4\end{array}\right)}
+\newtheorem{myDef}{Definition}
+\newtheorem{myTheo}{Theorem}
+
+\title{Updating Formula for Centerline Integration}
+\author{Zherong Pan}
+\pdfauthor{Zherong Pan}
+
+\begin{document}
+\maketitle
+
+We want to integrate the following PDE:
+\begin{eqnarray*}
+\E{M}\ddot{\E{x}}&=&-\FPP{\E{E}(\E{x})}{\E{x}},
+\end{eqnarray*}
+we derive the variational formula for various integrators for our ribbon solver, since we use L-BFGS to solve the timestepping equation.
+
+\section{Implicit Euler Integrator}
+The updating formula is:
+\begin{eqnarray*}
+\E{M}\frac{\E{v}^{n+1}-\E{v}^{n}}{\Delta t}&=&-\FPP{\E{E}(\E{x}^{n+1})}{\E{x}^{n+1}}	\\
+\E{x^{n+1}}&=&\E{x}^{n}+\Delta t\E{v}^{n+1}.
+\end{eqnarray*}
+The variational formula is:
+\begin{eqnarray*}
+\E{M}\frac{\E{v}^{n+1}-\E{v}^{n}}{\Delta t}+\FPP{\E{E}(\E{x}^{n+1})}{\E{x}}&=&	\\
+\FPP{}{\E{x}^{n+1}}\left(\frac{1}{2}(\E{v}^{n+1}-\E{v}^{n})^T\E{M}(\E{v}^{n+1}-\E{v}^{n})+\E{E}(\E{x}^{n+1})\right)&=&0.
+\end{eqnarray*}
+
+\section{Second Order BDF2 Integrator}
+The updating formula is:
+\begin{eqnarray*}
+\E{x}^{n+1}&=&\frac{4}{3}\E{x}^{n}-\frac{1}{3}\E{x}^{n-1}+\frac{2}{3}\Delta t\E{v}^{n+1}	\\
+\E{v}^{n+1}&=&\frac{4}{3}\E{v}^{n}-\frac{1}{3}\E{v}^{n-1}-\frac{2}{3}\Delta t\E{M}^{-1}\FPP{\E{E}(\E{x}^{n+1})}{\E{x}^{n+1}}.
+\end{eqnarray*}
+By rearranging, we have:
+\begin{eqnarray*}
+\E{M}\frac{\frac{3}{2}\E{v}^{n+1}-2\E{v}^{n}+\frac{1}{2}\E{v}^{n-1}}{\Delta t}+\FPP{\E{E}(\E{x}^{n+1})}{\E{x}}&=&	\\
+\FPP{}{\E{x}^{n+1}}\left(\frac{1}{2}\E{A}^T\E{M}\E{A}+\E{E}(\E{x}^{n+1})\right)&=&0	\\
+\E{v}^{n+1}-\frac{4}{3}\E{v}^{n}+\frac{1}{3}\E{v}^{n-1}&=&\E{A}	\\
+\frac{3}{2\Delta t}\E{x}^{n+1}-\frac{2}{\Delta t}\E{x}^{n}+\frac{1}{2\Delta t}\E{x}^{n-1}-\frac{4}{3}\E{v}^{n}+\frac{1}{3}\E{v}^{n-1}&=&\E{A}.
+\end{eqnarray*}
+
+\section{Implicit Newmark Scheme}
+Our updation formula is:
+\begin{eqnarray*}
+\E{M}\ddot{\E{S}}+\E{C}\dot{\E{S}}=\E{f}_I(\E{S})+\FPP{\E{X}}{\E{S}}^T\E{f}_E(\E{X})
+\end{eqnarray*}
+The updating rule for Newmark Scheme is:
+\begin{eqnarray*}
+\dot{\E{S}}_{n+1}&=&\dot{\E{S}}_n+(1-\gamma)\Delta t\ddot{\E{S}}_n+\gamma\Delta t\ddot{\E{S}}_{n+1}	\\
+\E{S}_{n+1}&=&\E{S}_n+\Delta t\dot{\E{S}}_n+\frac{(1-2\beta_2)\Delta t^2}{2}\ddot{\E{S}}_n+\beta\Delta t^2\ddot{\E{S}}_{n+1}
+\end{eqnarray*}
+Multiply both side by $\E{M}$ and write:
+\begin{eqnarray*}
+\E{M}\dot{\E{S}}_{n+1}&=&\Phi_n+\gamma\Delta t\E{M}\ddot{\E{S}}_{n+1}	\\
+\E{M}\E{S}_{n+1}&=&\Psi_n+\beta\Delta t^2\E{M}\ddot{\E{S}}_{n+1}	\\
+\Phi_n&=&\E{M}\dot{\E{S}}_n+(1-\gamma)\Delta t\E{M}\ddot{\E{S}}_n	\\
+\Psi_n&=&\E{M}\E{S}_n+\Delta t\E{M}\dot{\E{S}}_n+\frac{(1-2\beta_2)\Delta t^2}{2}\E{M}\ddot{\E{S}}_n	\\
+\E{M}\E{S}_{n+1}&=&\Psi_n+\frac{\beta}{\gamma}\Delta t(\E{M}\dot{\E{S}}_{n+1}-\Phi_n)	\\
+\Delta\E{S}&=&\frac{\beta}{\gamma}\Delta t\Delta\dot{\E{S}}
+\end{eqnarray*}
+With this equation, we can solve the first one for $\dot{\E{S}}_{n+1}$ by:
+\begin{eqnarray*}
+\E{M}\dot{\E{S}}_{n+1}&=&\Phi_n+\gamma\Delta t(\E{f}_I(\E{S}_{n+1})+\FPP{\E{X}}{\E{S}}^T\E{f}_E(\E{X}_{n+1})-\E{C}\dot{\E{S}}_{n+1})
+\end{eqnarray*}
+We apply first order taylor series on the above equation to get:
+\begin{eqnarray*}
+\E{M}(\dot{\E{S}}_{n+1}+\Delta\dot{\E{S}})&=&\Phi_n	\\
+&+&\gamma\Delta t(\E{f}_I(\E{S}_{n+1})-\E{K}_I\Delta\E{S}-\E{C}(\dot{\E{S}}_{n+1}+\Delta\dot{\E{S}}))	\\
+&+&\gamma\Delta t\FPP{\E{X}}{\E{S}}^T(\E{f}_E(\E{X}_{n+1})-\E{K}_E\FPP{\E{X}}{\E{S}}\Delta\E{S})
+\end{eqnarray*}
+After arrangement, we get:
+\begin{eqnarray*}
+\E{LHS}&=&\E{M}+\beta\Delta t^2(\E{K}_I+\FPP{\E{X}}{\E{S}}^T\E{K}_E\FPP{\E{X}}{\E{S}})+\gamma\Delta t\E{C}	\\
+\E{RHS}&=&\Phi_n-\E{M}\dot{\E{S}}_{n+1}+\gamma\Delta t(\E{f}_I(\E{S}_{n+1})+\FPP{\E{X}}{\E{S}}^T\E{f}_E(\E{X}_{n+1})-\E{C}\dot{\E{S}}_{n+1})
+\end{eqnarray*}
+
+\subsection{Implicit Euler for $S$}
+In this section, we introduce the approach to convert the Implicit Newmark Scheme mentioned above to the Implicit Euler Scheme, and use $S$ as the unknows in the resulting linear equation. 
+
+When $\gamma =\beta=1$ and $\beta_2=0.5$, we can obtain an Implicit Euler Integrator for $\Delta \dot{S}$. And we need to solve the following linear equation for $\Delta \dot{S}$,
+\begin{equation*}
+  \E{LHS} \Delta \dot{\E{S}} = \E{RHS}
+\end{equation*}
+Because
+\[
+\E{S}_{n+1} = \E{S}_{n} + \Delta \E{S} = \E{S}_{n}+\frac{\beta}{\gamma}\Delta t\Delta\dot{\E{S}}
+\]
+we have
+\[
+\Delta\dot{\E{S}} = \frac{\gamma }{\beta \Delta t}(\E{S}_{n+1}-\E{S}_{n})
+\]
+Thus at each time step, we need to solve
+\begin{equation*}
+  (\E{LHS})\E{S}_{n+1} = \frac{\beta \Delta t}{\gamma } \E{RHS} + (\E{LHS}) \E{S}_n
+\end{equation*}
+
+\section{Local Basis for Subspace STVK}
+In this case, the energy term is: $\E{E}=\E{E}_N(\E{U}\E{z}+\E{U}_l\E{z}_l)$. We cannot find the forth order coefficients for $\TWO{\E{U}}{\E{U}_l}$. So that we have to use taylor approximation at $\E{U}\E{z}$.
+
+\section{A Simple Friction Model}
+Let's consider one point collides with a surface with normal $\E{n}$. Suppose the velocity of this point is $\E{v}$, and the external force is $\E{f}$, the static and kinetic friction coefficients are $\mu_s$ and $\mu_k$ respectively, and the mignitude for the normal pressure force is $\lambda$. Then, the friction force of this point is
+\[
+\E{f}_r = 
+\left\{ \begin{array}{rl}
+  -\min(\|\E{f}_t\|, \lambda \mu_k)\frac{\E{v}_t}{\|\E{v}_t\|}, &\E{v}_t \neq 0\\
+  &\\
+  -\min(\|\E{f}_t\|, \lambda \mu_s)\frac{\E{f}_t}{\|\E{f}_t\|}, & \E{v}_t = 0
+\end{array} \right.\nonumber
+\]
+where $\E{f}_t$ and $\E{v}_t$ is calculated by using
+\begin{eqnarray*}
+ \E{f}_t &=& \E{f} - (\E{n} \cdot \E{f})\E{n}\\
+ \E{v}_t &=& \E{v} - (\E{n} \cdot \E{v})\E{n}
+\end{eqnarray*}
+respectively. Finally, we need to update the force $\E{f}$ using $\E{f}_r$, i.e
+\[
+\E{f} = \E{f} + \E{f}_r
+\]
+{\color{red}{And when $\|\E{f}_t\| < \lambda \mu$, we also need to set $\E{v} = \E{v}-\E{v}_t$.}}
+
+\bibliographystyle{acmsiggraph}
+\bibliography{template}
+\end{document}

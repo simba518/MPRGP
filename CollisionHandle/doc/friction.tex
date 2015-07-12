@@ -1,0 +1,36 @@
+\documentclass[9pt,twocolumn]{extarticle}
+
+\usepackage[hmargin=0.5in,tmargin=0.5in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+\usepackage{cleveref}
+\usepackage{color}
+\newcommand{\TODO}[1]{\textcolor{red}{#1}}
+
+\newcommand{\FPP}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\argmin}{\operatornamewithlimits{arg\ min}}
+\author{Siwang Li}
+
+\title{Friction}
+
+%% document begin here
+\begin{document}
+\maketitle
+
+\setlength{\parskip}{0.5ex}
+
+\section{Introduction}
+Firstly, we compute the collision forces by using the last status,
+\begin{equation}
+  f^c = A'x' - b'
+\end{equation}
+Then for each collided node $i$, we compute its fractional forces by using
+\begin{equation}
+  f^r_i = -\mu \|f^c_i\|_2 \frac{v'_i}{\|v'_i\|}
+\end{equation}
+where $v'_i$ is the volicity of node $i$ in the last time step.
+
+\end{document}

@@ -1,0 +1,62 @@
+;; RefTeX parse info file
+;; File: /home/simba/Workspace/Utility/Doc/MtlOpt.tex
+;; User: simba (simba)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/home/simba/Workspace/Utility/Doc/")
+
+(label-numbers)
+
+(bof "/home/simba/Workspace/Utility/Doc/MtlOpt.tex")
+
+(toc "toc" "    1 Formulation" "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil 2 "1" "\\section{Formulation}" 2962)
+
+("all" "e" "\\min_{G,l}(\\phi_e(G,l)+\\mu_{g}\\phi_s(G)+\\mu_{l}\\phi_s(l)) " "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+("smooth" "e" "\\phi_s(x) = \\frac{1}{2}\\sum_{(i,j)_{n}}(x_i-x_j)^2V_{i,j}, \\mbox{ for all tet. }i " "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+("red_meq" "e" "\\ddot{z} + \\Lambda z = 0 " "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+("full_meq_red" "e" "(W^TMW)\\ddot{z} + (W^TK(G,l)W) z = 0 " "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+("cond_1" "e" "W^TK(G,l)W = (W^TMW) \\Lambda " "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+("dk" "e" "\\phi_e(G,l) &=& \\frac{1}{2}\\|{W}^TK(G,l){W}-({W}^T{M}{W})\\Lambda\\|_C^2" "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+(toc "toc" "          1.0.0.1 Scale $\\Lambda$." "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil 5 "1.0.0.1" "\\paragraph{Scale $\\Lambda$.}" 4707)
+
+("scale_la" "e" "\\Lambda = \\frac{\\rho_0 h^2}{\\rho h_0^2}\\tilde{\\Lambda} " "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+(toc "toc" "          1.0.0.2 Penalty for each mode." "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil 5 "1.0.0.2" "\\paragraph{Penalty for each mode.}" 5338)
+
+("mu-i" "e" "\\mu_i = \\frac{\\|z_i\\|_F^2}{\\|f_i\\|_F^2 \\lambda_i^2} " "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+("mu-i" "e" "C_{i,j} = \\min(\\mu_i, \\mu_j) " "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+(toc "toc" "          1.0.0.3 Constrained nodes." "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil 5 "1.0.0.3" "\\paragraph{Constrained nodes.}" 5948)
+
+(toc "toc" "    2 Experiments and Analysis" "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil 2 "2" "\\section{Experiments and Analysis}" 7544)
+
+(toc "toc" "      2.1 Experiment 1" "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil 3 "2.1" "\\subsection{Experiment 1}" 7605)
+
+("exp1_smooth_GL" "f" "Results for the fine beam model without using smooth item." "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+("exp1_smooth_E" "f" "Results for the fine beam model without using smooth item." "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+("exp1_non_smooth_E" "f" "Results for the fine beam model without using smooth item." "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil)
+
+(toc "toc" "      2.2 Experiment 2" "/home/simba/Workspace/Utility/Doc/MtlOpt.tex" nil 3 "2.2" "\\subsection{Experiment 2}" 10340)
+
+(eof "/home/simba/Workspace/Utility/Doc/MtlOpt.tex")
+))
+

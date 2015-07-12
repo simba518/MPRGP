@@ -1,0 +1,56 @@
+/*compute the gradient of b(y) for the RS method.*/
+
+kill(all)$
+
+/*functions for computing the 3x3 rotational matrix.*/
+EXP(x,y,z,theta,c) := matrix([cos(theta)+x^2*c , x*y *c-z*sin(theta), x*z*c + y*sin(theta)],[x*y*c + z*sin(theta) , cos(theta) + y^2*c , y*z*c - x*sin(theta)],[z*x*c-y*sin(theta) , z*y*c + x*sin(theta) ,cos(theta)+z^2*c])$
+
+theta(p) := sqrt(p[1]^2 + p[2]^2 + p[3]^2)$
+c(p) := 1 - cos(theta(p))$
+x(p) := p[1]/theta(p)$
+y(p) := p[2]/theta(p)$
+z(p) := p[3]/theta(p)$
+R(p) := EXP(x(p),y(p),z(p),theta(p),c(p))$
+
+/*compute the symetric part*/
+S(p) := matrix([p[4],p[5],p[6]],[p[5],p[7],p[8]],[p[6],p[8],p[9]])$
+I : matrix([1,0,0],[0,1,0],[0,0,1])$
+
+/*compute b(y), here p == y, and V is actual sqrt(V)*/
+B(V,p) := V*(R(p) . (I + S(p)) - I)$
+b(V,p) := matrix([B(V,p)[1][1]],[B(V,p)[1][2]],[B(V,p)[1][3]],[B(V,p)[2][1]],[B(V,p)[2][2]],[B(V,p)[2][3]],[B(V,p)[3][1]],[B(V,p)[3][2]],[B(V,p)[3][3]])$
+
+/*compute grad(b(V,p)) with respect to p*/
+dBdpFun(V,p) := ''(jacobian([b(V,p)],[p[1],p[2],p[3],p[4],p[5],p[6],p[7],p[8],p[9]]))$
+p : makelist(concat(s,i),i,1,9)$
+dBdp : ratsimp( trigsimp (dBdpFun(V,p)) )$
+
+/*store as a column major list*/
+dbdpList : makelist(concat(x,i),i,1,81)$
+( for i:1 step 1 thru 9 do (
+    for j:1 step 1 thru 9 do (	
+  	  	dbdpList[(i-1)*9+j] : dBdp[1,i][j,1]
+  	)
+  )
+)$
+
+/* s*grad(b(V,p)), where s is a 1x9 vector, the result is store in a 1x9 vector.*/
+s : makelist(concat(ss,i),i,1,9)$
+sxdbdpList : makelist(concat(sxg,i),i,1,9)$
+( for i:1 step 1 thru 9 do (
+    sxdbdpList[i] : 0,
+    for j:1 step 1 thru 9 do (	
+  	  sxdbdpList[i]:  sxdbdpList[i]+s[j]*dbdpList[(i-1)*9+j]
+  	)
+  )
+)$
+
+/*optimize and out put as f90 code*/
+/*load("f90")$
+f90(optimize(dbdpList));*/
+
+load("f90")$
+f90(optimize(sxdbdpList));
+
+/*V : 1.5$*/
+/*p : [0.680375, -0.211234, 0.566198, 0.59688, 0.823295, -0.604897, -0.329554, 0.536459, -0.444451]$*/
