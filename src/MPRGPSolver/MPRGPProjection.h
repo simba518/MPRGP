@@ -351,7 +351,7 @@ namespace MATH{
 	  phi = g+J.transpose()*lambda;
 	}
 	void BETA(const Vec &g, Vec &beta, const Vec &phi){
-
+	  ///@todo
 	  beta = g-phi;
 	  Vec lambda = J*beta;
 	  for (size_t i = 0; i < face.size(); ++i){
@@ -385,17 +385,27 @@ namespace MATH{
 	using BaseGeneralConProjector<T>::face;
 	
   public:
-	GeneralConProjector(const SparseMatrix<T> &J, const Vec &c):BaseGeneralConProjector<T>(J, c){}
+	GeneralConProjector(const SparseMatrix<T> &J, const Vec &c):BaseGeneralConProjector<T>(J, c){
+	  JJt = J*J.transpose();
+	}
 	void project(const Vec &x,Vec &y) const{
-
-	  const Vec I = Vec::Ones(x.size());
-	  const Matrix<T,-1,-1> Jm = J;
-	  const Matrix<T,-1,-1> Im = I.asDiagonal();
-	  solveQP(Im, x, J, c, y);
+	  
+	  TRACE_FUN();
+	  Vec lambda(c.size());
+	  const Matrix<T,-1,-1> A = JJt;
+	  assert_eq(c.size(), J.rows());
+	  assert_eq(x.size(), J.cols());
+	  const Vec b = c-J*x;
+	  const Matrix<T,-1,-1> I = Matrix<T,-1,-1>::Identity(lambda.size(), lambda.size());
+	  Vec c0(lambda.size());
+	  c0.setZero();
+	  solveQP(A, b, I, c0, lambda);
+	  y = x+J.transpose()*lambda;
 	  assert_ext(isFeasible(y),"Jy-c:\n"<<(J*y-c).transpose());
 	}
 	void PHI(const Vec &g,Vec &phi) const{
 
+	  TRACE_FUN();
 	  SimplicialLLT<SparseMatrix<T> > solver;
 	  solver.compute(JJt_active);
 	  if(solver.info()!=Success){
@@ -410,16 +420,20 @@ namespace MATH{
 	}
 	void BETA(const Vec &g, Vec &beta, const Vec &phi){
 
-	  const Vec I = Vec::Ones(g.size());
-	  const Matrix<T,-1,-1> Im = I.asDiagonal();
+	  TRACE_FUN();
+	  Vec lambda(J_active.rows());
 	  const Vec gp = g-phi;
-	  const Matrix<T,-1,-1> _Jm = -J_active;
-	  Vec b(g.size());
-	  b.setZero();
-	  solveQP(Im, gp, _Jm, b, beta);
+	  const Matrix<T,-1,-1> A = JJt_active;
+	  const Vec b = J_active*gp;
+	  const Matrix<T,-1,-1> I = Matrix<T,-1,-1>::Identity(lambda.size(), lambda.size());
+	  Vec c0(lambda.size());
+	  c0.setZero();
+	  solveQP(A, b, I, c0, lambda);
+	  beta = gp-J_active.transpose()*lambda;
 	}
 	T PHITPHI(const Vec &x, const T alpha_bar, const Vec &phi) const{
 
+	  TRACE_FUN();
 	  assert_gt(alpha_bar, ScalarUtil<T>::scalar_eps);
 	  assert_eq(x.size(), phi.size());
 	  const Vec x_alpha_phi = x-alpha_bar*phi;
@@ -428,19 +442,23 @@ namespace MATH{
 	  const T phitphi = ((x-px).dot(phi))*(1.0/alpha_bar);
 	  return phitphi > 0.0 ? phitphi : 0.0;
 	}
-
 	void DECIDE_FACE(const Vec& x){
 
+	  TRACE_FUN();
 	  BaseGeneralConProjector<T>::DECIDE_FACE(x);
-	  prepareActiveConMatrix(BaseGeneralConProjector<T>::getFace(),J,J_active);
-	  JJt_active = J_active*J_active.transpose();
+	  prepareActiveConMatrix(BaseGeneralConProjector<T>::getFace(),J);
 	}
-	static void prepareActiveConMatrix(const vector<char>&face,const SparseMatrix<T>&J,SparseMatrix<T> &J_active){
-	  	  
+	const SparseMatrix<T> &getActiveConMatrix()const{
+	  return J_active;
+	}
+
+  protected:
+	void prepareActiveConMatrix(const vector<char>&face,const SparseMatrix<T>&J){
+
 	  const int total_rows = face.size();
 	  int rows = 0;
 	  for (int i = 0; i < (int)face.size(); ++i){
-		if(0==face[i])
+		if(1==face[i])
 		  rows ++;
 	  }
 	  const int cols = face.size();
@@ -451,7 +469,7 @@ namespace MATH{
 	  P_triplets.reserve(nonzeros);
 	  	
 	  for (int i = 0; i < total_rows; ++i){
-		if ( 0 == face[i] )
+		if ( 1 == face[i] )
 		  P_triplets.push_back( Tri((int)P_triplets.size(), i, 1) );
 	  }
 	  
@@ -460,10 +478,11 @@ namespace MATH{
 	  P.reserve( P_triplets.size() );
 	  P.setFromTriplets( P_triplets.begin(), P_triplets.end() );
 	  J_active = P*J;
+	  JJt_active = J_active*J_active.transpose();
 	}
 	
   private:
-	SparseMatrix<T> J_active, JJt_active;
+	SparseMatrix<T> J_active, JJt_active, JJt;
   };
 
 }//end of namespace

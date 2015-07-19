@@ -603,8 +603,8 @@ namespace MATH{
 
 	  assert_eq(A.rows(),B.size());
 	  assert_eq(A.rows(),x.size());
-	  typedef InFaceNoPreconSolver<T,MAT> Preconditioner;
-	  Preconditioner precond(projector.getFace());
+	  typedef DiagonalInFacePreconSolver<T,MAT,!preconditioned> Preconditioner;
+	  Preconditioner precond(A, projector.getFace());
 
 	  typedef MPRGPMonotonic<T, MAT, GeneralConProjector<T>, Preconditioner > MPRGPSolver;
 	  MPRGPSolver solver(A, B, precond, projector, max_it, tol, ev);

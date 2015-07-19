@@ -2,6 +2,7 @@
 #define _SIMPLEQP_H_
 
 #include <Eigen/Dense>
+#include <assertext.h>
 #include "QuadProg.h"
 using namespace Eigen;
 
@@ -14,6 +15,11 @@ namespace MATH{
   //min  0.5 x^T A x - b^T x, s.t. Jx >= c0
   template<class MATRIX_A>
   void solveQP(const MATRIX_A& A,const Cold& b,const Matd& J,const Cold& c0,Cold& x){
+
+	assert_eq(A.rows(), A.cols());
+	assert_eq(b.size(), A.rows());
+	assert_eq(J.cols(), b.size());
+	assert_eq(c0.size(), J.rows());
 
 	sizeType N=A.rows();
 	sizeType C=J.rows();
@@ -36,6 +42,7 @@ namespace MATH{
 
 	QuadProgPP::Vector<double> x0(N);
 	QuadProgPP::QuadProg::solve_quadprog(G,g0,CE,ce0,CI,ci0,x0);
+	x.resize(A.rows());
 	for(sizeType r=0;r<N;r++)
 	  x[r]=x0[r];
   }
