@@ -32,7 +32,7 @@
 #define WARN_LOG_COND(event,cond)
 #define WARN_LOG(event)
 #define TRACE_FUN()
-#define INFO_LOG(event)
+#define INFO_LOG(event) std::cout << event << endl;
 #define INFO_LOG_COND(event,cond)
 #define DEBUG_LOG_EXT(event)
 #define DEBUG_LOG(event)

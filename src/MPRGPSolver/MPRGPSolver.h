@@ -8,12 +8,8 @@
 namespace MATH{
 
   /**
-   * @class MPRGP a framework for the MPRGP method, with
-   * preconditioning and projecting method can be changed through the
-   * template parameters.
-   * 
-   * Solve such problem:
-   * min_{x} 1/2*x^t*A*x-x^t*B s.t. n_i*x_j+p_i>= 0
+   * frameworks for the MPRGP method, where the preconditioning and projecting 
+   * method can be changed through the template parameters.
    * 
    */
   template <typename T, typename MAT, typename PROJECTOIN,typename PRECONDITION>
@@ -44,8 +40,6 @@ namespace MATH{
 	size_t iterationsOut()const{return iterations_out;}
 	T residualOut()const{return residual_out;}
 	static T specRad(const MAT& G,Vec* ev=NULL,const T& eps=1E-3f){
-
-	  FUNC_TIMER_CLASS timer("compute spectral radius");
 
 	  T delta;
 	  Vec tmp,tmpOut;
@@ -347,6 +341,7 @@ namespace MATH{
 	std::string name;
   };
 
+  // traditional MPRGP method framework.
   template <typename T, typename MAT, typename PROJECTOIN,typename PRECONDITION>
   class MPRGP:public MPRGPBase<T,MAT, PROJECTOIN, PRECONDITION>{
 
@@ -360,7 +355,6 @@ namespace MATH{
 
 	int solve(Vec &result){
 
-	  FUNC_TIMER_CLASS timer(MB::name + " solving");
 	  this->initialize(result);
 
 	  for( MB::iteration = 0; MB::iteration < MB::max_iterations; MB::iteration++ ){
@@ -403,6 +397,7 @@ namespace MATH{
 
   };
 
+  // traditional monotonic MPRGP method framework.
   template <typename T, typename MAT, typename PROJECTOIN,typename PRECONDITION>
   class MPRGPMonotonic:public MPRGPBase<T,MAT, PROJECTOIN, PRECONDITION>{
 
@@ -416,7 +411,6 @@ namespace MATH{
 
   	int solve(Vec &result){
 
-	  FUNC_TIMER_CLASS timer(MB::name + " solving");
   	  this->initialize(result);
 
   	  for( MB::iteration = 0; MB::iteration < MB::max_iterations; ){
@@ -505,7 +499,7 @@ namespace MATH{
 	Matrix<T,-1,1> diag_A;
   };
 
-  // solvers
+  // MPRGP solver for lower bound constraints: x >= L.
   template<typename T=double>
   class MPRGPLowerBound{
 
@@ -522,6 +516,7 @@ namespace MATH{
 	}
   };
 
+  // MPRGP solver for box constraints: H >= x >= L.
   template<typename T=double>
   class MPRGPBoxBound{
 
@@ -539,180 +534,7 @@ namespace MATH{
 	}
   };
 
-  template<typename T=double>
-  class MPRGPPlane{
-
-	typedef Eigen::Matrix<T,-1,1> Vec;
-	typedef Eigen::Matrix<T,3,1> Vec3X;
-	typedef Eigen::Matrix<T,4,1> Vec4X;
-	typedef vector<Vec4X,Eigen::aligned_allocator<Vec4X> > VVec4X;
-	typedef vector<VVec4X > VVVec4X;
-	
-  public:
-	template <typename MAT, typename Preconditioner=DiagonalPlanePreconSolver<T,MAT, false> >
-	static int solve(const MAT &A,const Vec &B, PlaneProjector<T> &projector, Vec &x, 
-					 const T tol=1e-3, const int max_it = 1000, const std::string solver_name = "MPRGP"){
-
-	  assert_eq(A.rows(),B.size());
-	  assert_eq(A.rows(),x.size());
-	  FUNC_TIMER_CLASS fun_timer(solver_name + " total solving");
-
-	  UTILITY::Timer timer;
-	  timer.start();
-	  Preconditioner precond(A, projector.getFace(), projector.getPlanes(), projector.getFaceIndex());
-	  timer.stop(solver_name + " time for preconditioning setup: ");
-
-	  typedef MPRGPMonotonic<T, MAT, PlaneProjector<T>, Preconditioner > MPRGPSolver;
-	  MPRGPSolver solver(A, B, precond, projector, max_it, tol);
-	  solver.setName(solver_name);
-	  const int rlst_code = solver.solve(x);
-	  return rlst_code;
-	}
-
-	template <typename MAT>
-	static int solve(const MAT &A,const Vec &B, const VVVec4X &planes_for_each_node, Vec &x, 
-					 const T tol=1e-3, const int max_it = 1000, const std::string solver_name = "MPRGP"){
-
-	  PlaneProjector<T> projector(planes_for_each_node, x);
-	  return solve(A, B, projector, x, tol, max_it, solver_name);
-	}
-
-	template <typename MAT>
-	static int solve(const MAT &A,const Vec &B, const VVec4X &planes, Vec &x, 
-					 const T tol=1e-3, const int max_it = 1000, const std::string solver_name = "MPRGP"){
-
-	  VVVec4X planes_for_each_node;
-	  convert<T>(planes, planes_for_each_node, x.size()/3);
-	  return solve(A,B,planes_for_each_node, x, tol, max_it, solver_name);
-	}
-
-	// load the problem from file, then solve it.
-	static int solve(const std::string file_name, Vec&x, const T tol=1e-3, 
-					 const int max_it = 1000, const std::string solver_name = "MPRGP"){
-
-	  SparseMatrix<T> A;
-	  Vec B;
-	  VVec4X planes;
-	  int code = -1;
-	  if (loadQP(A,B,planes,x,file_name)){
-		code = solve(FixedSparseMatrix<T>(A),B,planes,x,tol,max_it,solver_name);
-	  }
-	  return code;
-	}
-
-	// compute the lagragian multipliers, where g = Ax-B.
-	static void computeLagMultipliers(const Vec &g, const VVVec4X &planes_for_each_node, 
-									  const std::vector<std::vector<int> > &face_indices,
-									  std::vector<std::vector<T> > &all_lambdas){
-	  
-	  const int num_verts = face_indices.size();
-	  assert_eq(g.size(), num_verts*3);
-	  all_lambdas.resize(num_verts);
-	  for(int i = 0; i < num_verts; i++){
-		const Vec3X gi = g.template segment<3>(i*3);
-		computeLagMultipliers(gi, planes_for_each_node[i], face_indices[i], all_lambdas[i]);
-	  }
-	}
-
-	// Compute the lagragian gradients. As input, we require lag_grad = Ax-b.
-	static void getLagGrad(const VVVec4X &planes, const vector<vector<T> > &all_lambdas, Vec &lag_grad){
-
-	  assert_eq( lag_grad.size(), (int)planes.size()*3 );
-	  assert_eq( planes.size(), all_lambdas.size() );
-	  for (size_t i = 0; i < all_lambdas.size(); ++i){
-		const vector<T> &lambdas = all_lambdas[i];
-		const VVec4X &plane = planes[i];
-		assert_eq(lambdas.size(), plane.size());
-		for (size_t p = 0; p < lambdas.size(); ++p)
-		  lag_grad.template segment<3>(i*3) -= lambdas[p]*plane[p].template segment<3>(0);
-	  }
-	}
-
-	template <typename MAT>
-	static bool checkResult(const MAT &A,const Vec &B, const PlaneProjector<T> &projector, 
-							const Vec &x,const T grad_tol, const T lambda_low_bound=0.0){
-
-	  const Vec g = A*x-B;
-	  const vector<vector<int> > &face_indices = projector.getFaceIndex();
-	  const VVVec4X &planes_for_each_node = projector.getPlanes();
-	  vector<vector<T> > all_lambdas;
-	  computeLagMultipliers(g,planes_for_each_node,face_indices,all_lambdas);
-
-	  bool valid = greaterThan(all_lambdas, lambda_low_bound);
-	  Vec lag_grad = g;
-	  getLagGrad(planes_for_each_node, all_lambdas, lag_grad);
-	  const T gnorm = lag_grad.norm();
-	  ERROR_LOG_COND("lag_grad.norm(): "<< gnorm << "\ntol: "<<grad_tol, (gnorm <= grad_tol));
-	  valid &= (gnorm <= grad_tol);
-	  return valid;
-	}
-
-  protected:
-	static void computeLagMultipliers(const Vec3X &gi, const VVec4X &planes,
-									  const std::vector<int> &face_i,
-									  std::vector<T> &lambdas){
-	  
-	  lambdas.resize(planes.size());
-	  for (size_t i = 0; i < lambdas.size(); ++i){
-		lambdas[i] = (T)0.0f;
-	  }
-
-	  if(face_i.size() == 1){
-
-		const int p = face_i[0];
-		assert_in(p, 0, (int)planes.size()-1);
-		lambdas[p] = gi.dot(planes[p].template segment<3>(0));
-		// assert_ge(lambdas[p],0.0f);
-
-	  }else if(face_i.size() == 2){
-
-		const int p0 = face_i[0];
-		const int p1 = face_i[1];
-		assert_in(p0, 0, (int)planes.size()-1);
-		assert_in(p1, 0, (int)planes.size()-1);
-
-		Matrix<T, 3,2> N;
-		N.template block<3,1>(0,0) = planes[p0].template segment<3>(0);
-		N.template block<3,1>(0,1) = planes[p1].template segment<3>(0);
-	
-		const Matrix<T,2,2> A = (N.transpose()*N).inverse();
-		assert_eq_ext(A, A, "N: " << N);
-		const Matrix<T,2,1> la = A*(N.transpose()*gi);
-		lambdas[p0] = la[0];
-		lambdas[p1] = la[1];
-
-		// assert_ge(lambdas[p0],0.0f);
-		// assert_ge(lambdas[p1],0.0f);
-
-	  }else if(face_i.size() >= 3){
-	
-		const int p0 = face_i[0];
-		const int p1 = face_i[1];
-		const int p2 = face_i[2];
-		assert_in(p0, 0, (int)planes.size()-1);
-		assert_in(p1, 0, (int)planes.size()-1);
-		assert_in(p2, 0, (int)planes.size()-1);
-
-		Matrix<T,3,3> N;
-		N.template block<3,1>(0,0) = planes[p0].template segment<3>(0);
-		N.template block<3,1>(0,1) = planes[p1].template segment<3>(0);
-		N.template block<3,1>(0,2) = planes[p2].template segment<3>(0);
-	
-		const Matrix<T,3,3> A = (N.transpose()*N).inverse();
-		assert_eq_ext(A, A, "N: " << N);
-		const Vec3X la = A*(N.transpose()*gi);
-		lambdas[p0] = la[0];
-		lambdas[p1] = la[1];
-		lambdas[p2] = la[2];
-
-		// assert_ge(lambdas[p0],0.0f);
-		// assert_ge(lambdas[p1],0.0f);
-		// assert_ge(lambdas[p2],0.0f);
-	  }
-	}
-
-  };
-
+  // MPRGP solver for decoupled collision constraints: Jx >= c and J^t J should be diagonal.
   template<typename T=double>
   class MPRGPDecoupledCon{
 
@@ -726,13 +548,8 @@ namespace MATH{
 
 	  assert_eq(A.rows(),B.size());
 	  assert_eq(A.rows(),x.size());
-	  FUNC_TIMER_CLASS fun_timer(solver_name + " total solving");
-
-	  UTILITY::Timer timer;
-	  timer.start();
 	  typedef DiagonalDecouplePreconSolver<T,MAT, !preconditioned> Preconditioner;
 	  Preconditioner precond(A, projector.getFace(), projector.getConMatrix());
-	  timer.stop(solver_name + " time for preconditioning setup: ");
 
 	  typedef MPRGPMonotonic<T, MAT, DecoupledConProjector<T>, Preconditioner > MPRGPSolver;
 	  MPRGPSolver solver(A, B, precond, projector, max_it, tol, ev);
