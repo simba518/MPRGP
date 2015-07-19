@@ -6,6 +6,8 @@
 #include <Eigen/Dense>
 #include <Eigen/Sparse>
 #include <Eigen/SparseCholesky>
+#include <MPRGPProjection.h>
+#include <SimpleQP.h>
 #include "MPRGPUtility.h"
 using namespace Eigen;
 using namespace std;
@@ -385,7 +387,10 @@ namespace MATH{
   public:
 	GeneralConProjector(const SparseMatrix<T> &J, const Vec &c):BaseGeneralConProjector<T>(J, c){}
 	void project(const Vec &x,Vec &y) const{
-	  ///@todo solveQP(I,x,J,c,y);
+
+	  const Vec I = Vec::Ones(x.size());
+	  const Matrix<T,-1,-1> Jm = J;
+	  solveQP(I.asDiagonal(), x, J, c, y);
 	  assert_ext(isFeasible(y),"Jy-c:\n"<<(J*y-c).transpose());
 	}
 	void PHI(const Vec &g,Vec &phi) const{
@@ -403,7 +408,12 @@ namespace MATH{
 	  phi = g+J_active.transpose()*lambda_active;
 	}
 	void BETA(const Vec &g, Vec &beta, const Vec &phi){
-	  ///@todo solveQP(I,g-phi,-J_active,0,beta);
+
+	  const Vec I = Vec::Ones(x.size());
+	  const Vec gp = g-phi;
+	  const Matrix<T,-1,-1> _Jm = -J_active;
+	  const Vec b = Vec::Zeros(g.size());
+	  solveQP(I.asDiagonal(), gp, _Jm, b, beta);
 	}
 	T PHITPHI(const Vec &x, const T alpha_bar, const Vec &phi) const{
 
@@ -417,12 +427,13 @@ namespace MATH{
 	}
 
 	void DECIDE_FACE(const Vec& x){
+
 	  BaseGeneralConProjector<T>::DECIDE_FACE(x);
 	  prepareActiveConMatrix(BaseGeneralConProjector<T>::getFace(),J,J_active);
 	  JJt_active = J_active*J_active.transpose();
 	}
 	static prepareActiveConMatrix(const vector<char>&face,const SparseMatrix<T>&J,SparseMatrix<T> &J_active){
-	  
+	  ///@todo
 	}
 	
   private:

@@ -7,6 +7,7 @@ ADD_EXECUTABLE(${APPNAME}
   main.cpp
   # ResultsToObj.cpp
   ConvergencyCompare.cpp
+  MPRGPTest.cpp
   # VtkToAbq.cpp
   )
 

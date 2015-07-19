@@ -94,6 +94,7 @@ INCLUDE_DIRECTORIES(
   ${PROJECT_SOURCE_DIR}/src/CommonFile/geom
   ${PROJECT_SOURCE_DIR}/src/ElasticSolver
   ${PROJECT_SOURCE_DIR}/src/MPRGPSolver
+  ${PROJECT_SOURCE_DIR}/src/MPRGPSolver/SimpleQP
   ${PROJECT_SOURCE_DIR}/src/Utility
 )
 
