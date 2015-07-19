@@ -6,7 +6,7 @@ ADD_EXECUTABLE(${APPNAME}
   # ${collisionhandle_test_src}
   main.cpp
   # ResultsToObj.cpp
-  ConvergencyCompare.cpp
+  # ConvergencyCompare.cpp
   MPRGPTest.cpp
   # VtkToAbq.cpp
   )

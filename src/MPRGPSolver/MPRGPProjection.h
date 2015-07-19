@@ -37,17 +37,17 @@ namespace MATH{
 	  assert_eq(_L.size(), X.size());
 	  T ret=ScalarUtil<T>::scalar_max;
 	  T tmp;
-// #pragma omp parallel private(tmp)
+	  // #pragma omp parallel private(tmp)
 	  {
 		tmp=ScalarUtil<T>::scalar_max;
-// #pragma omp for
+		// #pragma omp for
 		for(size_t i=0;i<X.size();i++){
 		  if(D[i] > ScalarUtil<T>::scalar_eps && X[i] > _L[i])	//handle rounding err
 			tmp=std::min<T>(tmp,(X[i]-_L[i])/D[i]);
 		}
 
 		// OMP_CRITICAL_
-		  ret=std::min<T>(ret,tmp);
+		ret=std::min<T>(ret,tmp);
 	  }
 	  return ret;
 	}
@@ -94,7 +94,7 @@ namespace MATH{
 	  assert_eq(x.size(), phi.size());
 	  const Vec &L = _L;
 	  T phiTphi=0.0f;
-// #pragma omp parallel for reduction(+:phiTphi)
+	  // #pragma omp parallel for reduction(+:phiTphi)
 	  for(size_t i=0;i<x.rows();i++){
 		T phiTilde=0.0f;
 		if(phi[i] > 0.0f && x[i] > L[i])	//handle rounding error
@@ -143,10 +143,10 @@ namespace MATH{
 	  assert_eq(_H.size(), X.size());
 	  T ret=ScalarUtil<T>::scalar_max;
 	  T tmp;
-// #pragma omp parallel private(tmp)
+	  // #pragma omp parallel private(tmp)
 	  {
 		tmp=ScalarUtil<T>::scalar_max;
-// #pragma omp for
+		// #pragma omp for
 		for(size_t i=0;i<X.size();i++)
 		  {
 			if(D[i] > ScalarUtil<T>::scalar_eps && X[i] > _L[i])	//handle rounding err
@@ -156,7 +156,7 @@ namespace MATH{
 		  }
 
 		// OMP_CRITICAL_
-		  ret=std::min<T>(ret,tmp);
+		ret=std::min<T>(ret,tmp);
 	  }
 	  return ret;
 	}
@@ -207,7 +207,7 @@ namespace MATH{
 	  const Vec &L = _L;
 	  const Vec &H = _H;
 	  T phiTphi=0.0f;
-// #pragma omp parallel for reduction(+:phiTphi)
+	  // #pragma omp parallel for reduction(+:phiTphi)
 	  for(size_t i=0;i<x.rows();i++){
 		T phiTilde=0.0f;
 		if(phi[i] > 0.0f && x[i] > L[i])	//handle rounding error
@@ -224,7 +224,7 @@ namespace MATH{
 
 	  OMP_PARALLEL_FOR_
 		for(size_t i=0; i < x.size();i++){
-		   /// @bug lsw, not test
+		  /// @bug lsw, not test
 		  if( x[i] < _L[i]-ScalarUtil<T>::scalar_eps ||x[i]>_H[i]+ScalarUtil<T>::scalar_eps)
 			return false;
 		}
@@ -409,7 +409,7 @@ namespace MATH{
 	}
 	void BETA(const Vec &g, Vec &beta, const Vec &phi){
 
-	  const Vec I = Vec::Ones(x.size());
+	  const Vec I = Vec::Ones(g.size());
 	  const Vec gp = g-phi;
 	  const Matrix<T,-1,-1> _Jm = -J_active;
 	  const Vec b = Vec::Zeros(g.size());
@@ -432,15 +432,36 @@ namespace MATH{
 	  prepareActiveConMatrix(BaseGeneralConProjector<T>::getFace(),J,J_active);
 	  JJt_active = J_active*J_active.transpose();
 	}
-	static prepareActiveConMatrix(const vector<char>&face,const SparseMatrix<T>&J,SparseMatrix<T> &J_active){
-	  ///@todo
+	static void prepareActiveConMatrix(const vector<char>&face,const SparseMatrix<T>&J,SparseMatrix<T> &J_active){
+	  	  
+	  const int total_rows = face.size();
+	  int rows = 0;
+	  for (int i = 0; i < (int)face.size(); ++i){
+		if(0==face[i])
+		  rows ++;
+	  }
+	  const int cols = face.size();
+	  const int nonzeros = rows;
+
+	  typedef Eigen::Triplet<T> Tri;
+	  std::vector<Tri> P_triplets;
+	  P_triplets.reserve(nonzeros);
+	  	
+	  for (int i = 0; i < total_rows; ++i){
+		if ( 0 == face[i] )
+		  P_triplets.push_back( Tri((int)P_triplets.size(), i, 1) );
+	  }
+	  
+	  SparseMatrix<T> P;
+	  P.resize(rows, cols);
+	  P.reserve( P_triplets.size() );
+	  P.setFromTriplets( P_triplets.begin(), P_triplets.end() );
+	  J_active = P*J;
 	}
 	
   private:
 	SparseMatrix<T> J_active, JJt_active;
   };
-
-
 
 }//end of namespace
 

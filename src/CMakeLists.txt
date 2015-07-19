@@ -1,15 +1,16 @@
 SET(APP_NAME collision_handle)
 AUX_SOURCE_DIRECTORY(./Utility utility_src)
 AUX_SOURCE_DIRECTORY(./CommonFile commonfile_src)
-AUX_SOURCE_DIRECTORY(./CollisionHandle collisionhandle_src)
+AUX_SOURCE_DIRECTORY(./CollisionHandle/ collisionhandle_src)
 AUX_SOURCE_DIRECTORY(./MPRGPSolver/SimpleQP qp_src)
 
 ADD_EXECUTABLE(${APP_NAME}
+  ./CollisionHandle/main.cpp
   ${utility_src}
   # ${commonfile_src}
   # ${collisionhandle_src}
   ${qp_src}
-  )
+ )
 
 TARGET_LINK_LIBRARIES(${APP_NAME}
 

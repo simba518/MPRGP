@@ -588,6 +588,42 @@ namespace MATH{
 	  return code;
 	}
   };
+
+  // MPRGP solver for general collision constraints: Jx >= c and J^t J can be non-diagonal.
+  template<typename T=double>
+  class MPRGPGeneralCon{
+
+	typedef Eigen::Matrix<T,-1,1> Vec;
+	
+  public:
+	template <typename MAT, bool preconditioned = true>
+	static int solve(const MAT &A,const Vec &B, GeneralConProjector<T> &projector, Vec &x, 
+					 const T tol=1e-3, const int max_it = 1000, 
+					 const std::string solver_name = "MPRGP", Vec *ev = NULL){
+
+	  assert_eq(A.rows(),B.size());
+	  assert_eq(A.rows(),x.size());
+	  typedef InFaceNoPreconSolver<T,MAT> Preconditioner;
+	  Preconditioner precond(projector.getFace());
+
+	  typedef MPRGPMonotonic<T, MAT, GeneralConProjector<T>, Preconditioner > MPRGPSolver;
+	  MPRGPSolver solver(A, B, precond, projector, max_it, tol, ev);
+	  solver.setName(solver_name);
+	  const int rlst_code = solver.solve(x);
+	  return rlst_code;
+	}
+
+	template <typename MAT, bool preconditioned = true>
+	static int solve(const MAT &A,const Vec &B,const SparseMatrix<T> &J,const Vec &c,Vec &x, 
+					 const T tol=1e-3, const int max_it = 1000, 
+					 const std::string solver_name = "MPRGP", Vec *ev = NULL){
+
+	  GeneralConProjector<T> projector(J, c);
+	  const Vec init_x = x;
+	  projector.project(init_x, x);
+	  return solve<MAT, preconditioned>(A, B, projector, x, tol, max_it, solver_name, ev);
+	}
+  };
   
 }//end of namespace
 
