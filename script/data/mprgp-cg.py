@@ -15,6 +15,14 @@ def loadData(filename):
 mprgp = loadData("mprgp.txt")[0:100]
 cg = loadData("cg.txt")[0:100]
 
+mprgp_0 = mprgp[0]
+mprgp_opt = mprgp[-1]
+cg_0 = cg[0]
+cg_opt = cg[-1]
+for i in range(0,len(mprgp)):
+    mprgp[i] = abs(mprgp[i]-mprgp_opt)/abs(mprgp_0-mprgp_opt)
+    cg[i] = abs(cg[i]-cg_opt)/abs(cg_0-cg_opt)
+
 trace1 = Scatter(
     x=range(0,len(mprgp)),
     y=mprgp
