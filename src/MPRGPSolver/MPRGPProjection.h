@@ -390,7 +390,8 @@ namespace MATH{
 
 	  const Vec I = Vec::Ones(x.size());
 	  const Matrix<T,-1,-1> Jm = J;
-	  solveQP(I.asDiagonal(), x, J, c, y);
+	  const Matrix<T,-1,-1> Im = I.asDiagonal();
+	  solveQP(Im, x, J, c, y);
 	  assert_ext(isFeasible(y),"Jy-c:\n"<<(J*y-c).transpose());
 	}
 	void PHI(const Vec &g,Vec &phi) const{
@@ -410,10 +411,12 @@ namespace MATH{
 	void BETA(const Vec &g, Vec &beta, const Vec &phi){
 
 	  const Vec I = Vec::Ones(g.size());
+	  const Matrix<T,-1,-1> Im = I.asDiagonal();
 	  const Vec gp = g-phi;
 	  const Matrix<T,-1,-1> _Jm = -J_active;
-	  const Vec b = Vec::Zeros(g.size());
-	  solveQP(I.asDiagonal(), gp, _Jm, b, beta);
+	  Vec b(g.size());
+	  b.setZero();
+	  solveQP(Im, gp, _Jm, b, beta);
 	}
 	T PHITPHI(const Vec &x, const T alpha_bar, const Vec &phi) const{
 
