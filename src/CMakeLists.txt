@@ -7,8 +7,8 @@ AUX_SOURCE_DIRECTORY(./MPRGPSolver/SimpleQP qp_src)
 ADD_EXECUTABLE(${APP_NAME}
   ./CollisionHandle/main.cpp
   ${utility_src}
-  # ${commonfile_src}
-  # ${collisionhandle_src}
+  ${commonfile_src}
+  ${collisionhandle_src}
   ${qp_src}
  )
 

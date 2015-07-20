@@ -10,58 +10,60 @@ BOOST_AUTO_TEST_SUITE(MPRGPTest)
 
 BOOST_AUTO_TEST_CASE(test_projector){
 
-  const int m = 3;
-  const int n = 4;
+  for (int m = 0; m < 2; ++m){
 
-  const MatrixXd JM = MatrixXd::Identity(m,n);
-  const SparseMatrix<double> J = createFromDense(JM);
-  const SparseMatrix<double> JJt_mat=J*J.transpose();
-  VectorXd JJt;
-  getDiagonal(JJt_mat, JJt);
+	const int n = 4;
 
-  const VectorXd c = VectorXd::Random(m);
+	const MatrixXd JM = MatrixXd::Identity(m,n);
+	const SparseMatrix<double> J = createFromDense(JM);
+	const SparseMatrix<double> JJt_mat=J*J.transpose();
+	VectorXd JJt;
+	getDiagonal(JJt_mat, JJt);
 
-  DecoupledConProjector<double> dp(J, JJt, c);
-  GeneralConProjector<double> gp(J, c);
-  const VectorXd x = VectorXd::Random(n);
-  const VectorXd g = VectorXd::Random(n);
+	const VectorXd c = VectorXd::Random(m);
 
-  {// project, decide face
-	VectorXd y_d, y_g;
-	gp.project(x, y_g);
-	dp.project(x, y_d);
-	ASSERT_EQ(y_d.transpose(), y_g.transpose());
+	DecoupledConProjector<double> dp(J, JJt, c);
+	GeneralConProjector<double> gp(J, c);
+	const VectorXd x = VectorXd::Random(n);
+	const VectorXd g = VectorXd::Random(n);
 
-	gp.DECIDE_FACE(y_g);
-	dp.DECIDE_FACE(y_d);
-	// cout << "x: " << y_g.transpose() << endl;
-	// cout << "Jx-c: "<< (J*y_g-c).transpose() << endl;
-	// cout << "f: ";
-	for (int i = 0; i < m; ++i){
-	  // cout << (int)gp.getFace()[i] << " ";
-	  ASSERT_EQ( gp.getFace()[i], dp.getFace()[i]);
+	if(true){// project, decide face
+	  VectorXd y_d, y_g;
+	  gp.project(x, y_g);
+	  dp.project(x, y_d);
+	  ASSERT_EQ(y_d.transpose(), y_g.transpose());
+
+	  gp.DECIDE_FACE(y_g);
+	  dp.DECIDE_FACE(y_d);
+	  // cout << "x: " << y_g.transpose() << endl;
+	  // cout << "Jx-c: "<< (J*y_g-c).transpose() << endl;
+	  // cout << "f: ";
+	  for (int i = 0; i < m; ++i){
+		// cout << (int)gp.getFace()[i] << " ";
+		ASSERT_EQ( gp.getFace()[i], dp.getFace()[i]);
+	  }
+	  // cout << endl;
 	}
-	// cout << endl;
-  }
 
-  {// phi
-	VectorXd phi_g, phi_d;
-	gp.PHI(g, phi_g);
-	dp.PHI(g, phi_d);
-	// cout<< "J: " << gp.getConMatrix() << endl;
-	// cout<< "Jh: " << gp.getActiveConMatrix() << endl;
-	// cout<< "J*phi: " << (gp.getActiveConMatrix()*phi_d).transpose() << endl;
-	ASSERT_EQ(phi_d.transpose(), phi_g.transpose());
-  }
+	if(true){// phi
+	  VectorXd phi_g, phi_d;
+	  gp.PHI(g, phi_g);
+	  dp.PHI(g, phi_d);
+	  // cout<< "J: " << gp.getConMatrix() << endl;
+	  // cout<< "Jh: " << gp.getActiveConMatrix() << endl;
+	  // cout<< "J*phi: " << (gp.getActiveConMatrix()*phi_d).transpose() << endl;
+	  ASSERT_EQ(phi_d.transpose(), phi_g.transpose());
+	}
 
-  {// beta
-	const VectorXd phi = VectorXd::Random(n);
-	VectorXd beta_p, beta_d;
-	gp.BETA(g, beta_p, phi);
-	dp.BETA(g, beta_d, phi);
-	cout << "g-bd: " << (g-beta_d).transpose() << endl;
-	cout << "g-bp: " << (g-beta_p).transpose() << endl;
-	ASSERT_EQ(beta_d.transpose(), beta_p.transpose());
+	if(true){// beta
+	  const VectorXd phi = VectorXd::Random(n);
+	  VectorXd beta_p, beta_d;
+	  gp.BETA(g, beta_p, phi);
+	  dp.BETA(g, beta_d, phi);
+	  // cout << "g-bd: " << (g-beta_d).transpose() << endl;
+	  // cout << "g-bp: " << (g-beta_p).transpose() << endl;
+	  ASSERT_EQ(beta_d.transpose(), beta_p.transpose());
+	}
   }
 }
 

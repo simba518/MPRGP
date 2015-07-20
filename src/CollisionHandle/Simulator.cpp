@@ -53,10 +53,11 @@ void Simulator::init(const string &json_file){
 	  fem_solver = boost::shared_ptr<FemSolverExt>( new FemSolverExt(coll_type_int) );
 	}else if(solver_name == "ica"){
 	  fem_solver = boost::shared_ptr<FemSolverExt>( new ICAFemSolver(coll_type_int) );
-	}else{
-	  assert(solver_name == "mprgp");
+	}else if(solver_name == "mprgp"){
 	  fem_solver=boost::shared_ptr<FemSolverExt>(new DecoupledMprgpFemSolver(coll_type_int));
-	  // fem_solver = boost::shared_ptr<FemSolverExt>(new MprgpFemSolver(coll_type_int));
+	}else{
+	  assert(solver_name == "general_mprgp");
+	  fem_solver=boost::shared_ptr<FemSolverExt>(new GeneralMprgpFemSolver(coll_type_int));
 	}
   }
   

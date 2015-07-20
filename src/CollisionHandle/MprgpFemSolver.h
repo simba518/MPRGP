@@ -170,4 +170,22 @@ protected:
 
 };
 
+class GeneralMprgpFemSolver:public MprgpFemSolver{
+
+public:
+  GeneralMprgpFemSolver(const int cOption=2):MprgpFemSolver(cOption){
+	dcd_collider->setDecoupleConstraints(false);
+	solver_name = "general mprgp";
+  }
+  void init(){
+	MprgpFemSolver::init();
+	if(ccd_collider)
+	  ccd_collider->setDecoupleConstraints(false);
+  }
+
+protected:
+  void forward(const double dt);
+
+};
+
 #endif /*_MPRGPFEMSOLVER_H_*/

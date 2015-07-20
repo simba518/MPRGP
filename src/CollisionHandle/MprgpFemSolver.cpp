@@ -394,7 +394,15 @@ void MprgpFemSolver::print()const{
   FemSolverExt::print();
   INFO_LOG("mprgp it: "<<mprgp_max_it);
   INFO_LOG("mprgp tol: "<<mprgp_tol);
-  dcd_collider->print();
+  if(DCD == coll_type){
+	INFO_LOG("collision type: DCD");
+	dcd_collider->print();
+  }else if(CCD == coll_type){
+	INFO_LOG("collision type: CCD");
+	ccd_collider->print();
+  }else{
+	ERROR_LOG("collision type: unknown");
+  }
 }
 
 void MprgpFemSolver::computeFrictionForces(const VectorXd &RHS, const VectorXd &last_pos, 
@@ -511,6 +519,42 @@ void DecoupledMprgpFemSolver::forward(const double dt){
 
 	const FixedSparseMatrix<double> A(LHS_mat);
 	MPRGPDecoupledCon<double>::solve<FixedSparseMatrix<double>, true>(A,RHS,projector,new_pos,mprgp_tol,mprgp_max_it,"decoupled MPRGP",&power_ev);
+	if (updatePos() < eps)
+	  break;
+  }
+  computeFrictionForces(RHS, last_pos, new_pos, dt);
+}
+
+void GeneralMprgpFemSolver::forward(const double dt){
+  
+  const double eps=_tree.get<double>("eps");
+  const int maxIter=_tree.get<int>("maxIter");
+
+  Vec RHS(nrVar());
+  _LHS.reset(nrVar(),nrVar(),false);
+  _U.reset(nrVarF(),nrVar(),false);
+
+  SparseMatrix<double> J;
+  VectorXd c;
+  getCollConstraints(J,c);
+
+  GeneralConProjector<double> projector(J, c);
+  INFO_LOG("J.rows(): " << J.rows());
+
+  UTILITY::Timer timer;
+  const VectorXd last_pos = x1;
+  for (int i = 0; i < maxIter; i++) {
+
+	buildLinearSystem(LHS_mat, RHS, dt);
+	// saveQP(J, c, RHS);
+
+	timer.start();
+	projector.project(x1, new_pos);
+	assert(projector.isFeasible(new_pos));
+	timer.stop("time for finding feasible point: ");
+
+	const FixedSparseMatrix<double> A(LHS_mat);
+	MPRGPGeneralCon<double>::solve<FixedSparseMatrix<double>, true>(A,RHS,projector,new_pos,mprgp_tol,mprgp_max_it,"general MPRGP",&power_ev);
 	if (updatePos() < eps)
 	  break;
   }

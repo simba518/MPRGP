@@ -391,6 +391,10 @@ namespace MATH{
 	void project(const Vec &x,Vec &y) const{
 	  
 	  TRACE_FUN();
+	  if(J.rows() == 0){
+		y= x;
+		return ;
+	  }
 	  Vec lambda(c.size());
 	  const Matrix<T,-1,-1> A = JJt;
 	  assert_eq(c.size(), J.rows());
@@ -404,8 +408,12 @@ namespace MATH{
 	  assert_ext(isFeasible(y),"Jy-c:\n"<<(J*y-c).transpose());
 	}
 	void PHI(const Vec &g,Vec &phi) const{
-
+	  
 	  TRACE_FUN();
+	  if(J_active.rows() == 0){
+		phi = g;
+		return ;
+	  }
 	  SimplicialLLT<SparseMatrix<T> > solver;
 	  solver.compute(JJt_active);
 	  if(solver.info()!=Success){
@@ -421,8 +429,13 @@ namespace MATH{
 	void BETA(const Vec &g, Vec &beta, const Vec &phi){
 
 	  TRACE_FUN();
-	  Vec lambda(J_active.rows());
+	  if(J_active.rows() == 0){
+		beta = g-phi;
+		return;
+	  }
+
 	  const Vec gp = g-phi;
+	  Vec lambda(J_active.rows());
 	  const Matrix<T,-1,-1> A = JJt_active;
 	  const Vec b = J_active*gp;
 	  const Matrix<T,-1,-1> I = Matrix<T,-1,-1>::Identity(lambda.size(), lambda.size());

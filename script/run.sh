@@ -10,4 +10,6 @@
 
 # ./bin/release/collision_handle ./data/dino/cubes.ini  >  tempt/dino_cubes.txt
 
-./bin/release/collision_handle ./data/octopus/cubes.ini  >  tempt/octopus_cubes.txt
+./bin/release/collision_handle ./data/dino/two.ini  >  tempt/dino_two.txt
+
+# ./bin/release/collision_handle ./data/octopus/cubes.ini  >  tempt/octopus_cubes.txt
