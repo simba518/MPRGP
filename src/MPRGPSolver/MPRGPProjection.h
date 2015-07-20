@@ -326,6 +326,10 @@ namespace MATH{
 
 	void project(const Vec &x,Vec &y) const{
 
+	  if(J.rows() == 0){
+		y= x;
+		return ;
+	  }
 	  assert_eq(x.size(), J.cols());
 	  Vec lambda = c - J*x;
 	  OMP_PARALLEL_FOR_
@@ -338,6 +342,11 @@ namespace MATH{
 	}
 	void PHI(const Vec &g,Vec &phi) const{
 
+	  ///@todo
+	  // if(J_active.rows() == 0){
+	  // 	phi = g;
+	  // 	return ;
+	  // }
 	  Vec lambda = J*g;
 	  assert_eq(J.cols(), g.size());
 	  assert_eq(lambda.size(), (int)face.size());
@@ -351,6 +360,12 @@ namespace MATH{
 	  phi = g+J.transpose()*lambda;
 	}
 	void BETA(const Vec &g, Vec &beta, const Vec &phi){
+
+	  /// @todo
+	  // if(J_active.rows() == 0){
+	  // 	beta = g-phi;
+	  // 	return;
+	  // }
 	  ///@todo
 	  beta = g-phi;
 	  Vec lambda = J*beta;
