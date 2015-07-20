@@ -310,6 +310,7 @@ bool FEMBody::write(std::ostream& os,IOData* dat) const
 }
 bool FEMBody::writeABQ(const std::string& path) const
 {
+
     boost::filesystem::ofstream os(path);
     os << "*NODE" << std::endl;
     for(sizeType i=0; i<(sizeType)_vss.size(); i++)
@@ -776,8 +777,8 @@ void FEMMesh::reset(const std::string& path,scalar rad)
         }
     }
     //write invariant version
-    if(!inv)
-        getB(0).writeABQ(path);
+    // if(!inv)
+    //     getB(0).writeABQ(path);
 }
 void FEMMesh::reset(BBox<scalar> bb,const ImplicitFunc<scalar>& f,scalar rad,scalar cellSz)
 {

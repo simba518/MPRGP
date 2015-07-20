@@ -37,7 +37,7 @@ void Simulator::init(const string &json_file){
 
   int mesh_group_start_index = 0;
   jsonf.read("invertable", invertable, true);
-  
+
   // set fem solver
   {
 	string coll_type = "surface";
@@ -60,7 +60,7 @@ void Simulator::init(const string &json_file){
 	  fem_solver=boost::shared_ptr<FemSolverExt>(new GeneralMprgpFemSolver(coll_type_int));
 	}
   }
-  
+
   // load mesh
   {
 	DEBUG_LOG("load mesh");
@@ -68,7 +68,9 @@ void Simulator::init(const string &json_file){
 	if( jsonf.readFilePath("vol_file", abq_file) ){
 	  FEMMesh tempt_mesh( fem_solver->getMesh() );
 	  for (size_t i = 0; i < abq_file.size(); ++i){
+		cout << "file: " << abq_file[i] << endl;
 		tempt_mesh.reset(abq_file[i], 0.0f);
+		cout << "size: " << tempt_mesh.nrV() << endl;
 		fem_solver->getMesh() += tempt_mesh;
 	  }
 	}

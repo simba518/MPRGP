@@ -26,4 +26,4 @@ SET(lib_src ${qp_src})
 LIST(REMOVE_ITEM lib_src ./CollisionHandle/main.cpp)
 ADD_LIBRARY(${LIBRARY_NAME} ${lib_src})
 
-# ADD_SUBDIRECTORY(ElasticSolver)
+ADD_SUBDIRECTORY(ElasticSolver)
