@@ -1,0 +1,5160 @@
+Running 1 test case...
+frame: 0
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 64
+*INFO	: decoupled cg steps: 113
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 113
+*INFO	: decoupled residual: 7.43315e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.184203029
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 65
+*INFO	: general cg steps: 113
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 113
+*INFO	: general residual: 7.433150391e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.178339005
+frame: 1
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 142
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 142
+*INFO	: decoupled residual: 7.782449364e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.180956006
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 142
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 142
+*INFO	: general residual: 7.782449364e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.197636008
+frame: 2
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 160
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 160
+*INFO	: decoupled residual: 7.871688962e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.355445981
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 160
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 160
+*INFO	: general residual: 7.871688962e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.336745024
+frame: 3
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 167
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 167
+*INFO	: decoupled residual: 7.885760353e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.391073942
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 167
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 167
+*INFO	: general residual: 7.885760353e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.425209045
+frame: 4
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 171
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 171
+*INFO	: decoupled residual: 7.892423451e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.433735013
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 171
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 171
+*INFO	: general residual: 7.892423451e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.435845017
+frame: 5
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 186
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 186
+*INFO	: decoupled residual: 7.539665739e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.572378039
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 186
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 186
+*INFO	: general residual: 7.539665739e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.549464941
+frame: 6
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 188
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 188
+*INFO	: decoupled residual: 7.953592872e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.58257401
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 188
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 188
+*INFO	: general residual: 7.953592872e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.583538055
+frame: 7
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 193
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 193
+*INFO	: decoupled residual: 7.739911082e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.603795052
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 193
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 193
+*INFO	: general residual: 7.739911082e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.612676978
+frame: 8
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 204
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 204
+*INFO	: decoupled residual: 7.959936627e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.701589942
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 204
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 204
+*INFO	: general residual: 7.959936627e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.709916949
+frame: 9
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 206
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 206
+*INFO	: decoupled residual: 7.927061045e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.718687057
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 206
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 206
+*INFO	: general residual: 7.927061045e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.72479105
+frame: 10
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 208
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 208
+*INFO	: decoupled residual: 7.882789387e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.727967024
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 208
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 208
+*INFO	: general residual: 7.882789387e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.739357948
+frame: 11
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 223
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 223
+*INFO	: decoupled residual: 7.544070773e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.857236028
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 223
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 223
+*INFO	: general residual: 7.544070773e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.859055996
+frame: 12
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 226
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 226
+*INFO	: decoupled residual: 7.911998765e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.883847952
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 226
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 226
+*INFO	: general residual: 7.911998765e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.884523988
+frame: 13
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 230
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 230
+*INFO	: decoupled residual: 7.93353966e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.916771054
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 230
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 230
+*INFO	: general residual: 7.93353966e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.928467989
+frame: 14
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 235
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 235
+*INFO	: decoupled residual: 7.623782085e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.961812973
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 235
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 235
+*INFO	: general residual: 7.623782085e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.953335047
+frame: 15
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 235
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 235
+*INFO	: decoupled residual: 7.925008928e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.957123995
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 235
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 235
+*INFO	: general residual: 7.925008928e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.969980001
+frame: 16
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 237
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 237
+*INFO	: decoupled residual: 7.824246587e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.978834987
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 237
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 237
+*INFO	: general residual: 7.824246587e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.972272992
+frame: 17
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 239
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 239
+*INFO	: decoupled residual: 7.394641933e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 1.98515296
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 239
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 239
+*INFO	: general residual: 7.394641933e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 1.988240957
+frame: 18
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 242
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 242
+*INFO	: decoupled residual: 7.805002321e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.015582085
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 242
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 242
+*INFO	: general residual: 7.805002321e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.011996984
+frame: 19
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 241
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 241
+*INFO	: decoupled residual: 7.826508516e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.012511015
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 241
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 241
+*INFO	: general residual: 7.826508516e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.007765055
+frame: 20
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 242
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 242
+*INFO	: decoupled residual: 7.832779565e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.015552044
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 242
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 242
+*INFO	: general residual: 7.832779565e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.024269104
+frame: 21
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 243
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 243
+*INFO	: decoupled residual: 7.863550991e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.032789946
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 243
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 243
+*INFO	: general residual: 7.863550991e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.027057886
+frame: 22
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 247
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 247
+*INFO	: decoupled residual: 7.987935528e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.05853796
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 247
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 247
+*INFO	: general residual: 7.987935528e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.059015989
+frame: 23
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 251
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 251
+*INFO	: decoupled residual: 7.784837385e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.089225054
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 251
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 251
+*INFO	: general residual: 7.784837385e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.107405901
+frame: 24
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 253
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 253
+*INFO	: decoupled residual: 7.752391601e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.117330074
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 253
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 253
+*INFO	: general residual: 7.752391601e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.115993977
+frame: 25
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 252
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 252
+*INFO	: decoupled residual: 7.704316003e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.092221975
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 252
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 252
+*INFO	: general residual: 7.704316003e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.105384111
+frame: 26
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 256
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 256
+*INFO	: decoupled residual: 7.349261294e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.13557291
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 256
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 256
+*INFO	: general residual: 7.349261294e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.129102945
+frame: 27
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 254
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 254
+*INFO	: decoupled residual: 7.919667054e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.107434034
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 254
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 254
+*INFO	: general residual: 7.919667054e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.106261969
+frame: 28
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 254
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 254
+*INFO	: decoupled residual: 7.777531822e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.113464117
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 254
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 254
+*INFO	: general residual: 7.777531822e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.127860069
+frame: 29
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 256
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 256
+*INFO	: decoupled residual: 7.647682889e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.149921894
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 256
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 256
+*INFO	: general residual: 7.647682889e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.130297899
+frame: 30
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 257
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 257
+*INFO	: decoupled residual: 7.661247954e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.132848978
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 257
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 257
+*INFO	: general residual: 7.661247954e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.135714054
+frame: 31
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 256
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 256
+*INFO	: decoupled residual: 7.974145702e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.124177933
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 256
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 256
+*INFO	: general residual: 7.974145702e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.129900932
+frame: 32
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 260
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 260
+*INFO	: decoupled residual: 7.733658481e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.165576935
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 260
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 260
+*INFO	: general residual: 7.733658481e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.162851095
+frame: 33
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 260
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 260
+*INFO	: decoupled residual: 7.743801197e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.160589933
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 260
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 260
+*INFO	: general residual: 7.743801197e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.161190033
+frame: 34
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 259
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 259
+*INFO	: decoupled residual: 7.965775149e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.146651983
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 259
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 259
+*INFO	: general residual: 7.965775149e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.144047976
+frame: 35
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 260
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 260
+*INFO	: decoupled residual: 7.945418004e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.153321981
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 260
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 260
+*INFO	: general residual: 7.945418004e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.149902105
+frame: 36
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 261
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 261
+*INFO	: decoupled residual: 7.599033837e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.168379068
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 261
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 261
+*INFO	: general residual: 7.599033837e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.174427032
+frame: 37
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 264
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 264
+*INFO	: decoupled residual: 6.819736084e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.188453913
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 264
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 264
+*INFO	: general residual: 6.819736084e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.198954105
+frame: 38
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 263
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 263
+*INFO	: decoupled residual: 7.726280575e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.180768967
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 263
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 263
+*INFO	: general residual: 7.726280575e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.183103085
+frame: 39
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 262
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 262
+*INFO	: decoupled residual: 7.686121142e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.203300953
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 262
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 262
+*INFO	: general residual: 7.686121142e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.180855036
+frame: 40
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 264
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 264
+*INFO	: decoupled residual: 7.466577761e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.186628103
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 264
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 264
+*INFO	: general residual: 7.466577761e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.191972971
+frame: 41
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 264
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 264
+*INFO	: decoupled residual: 7.385183282e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.19187808
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 264
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 264
+*INFO	: general residual: 7.385183282e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.193586111
+frame: 42
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 263
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 263
+*INFO	: decoupled residual: 7.922474851e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.191351891
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 263
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 263
+*INFO	: general residual: 7.922474851e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.18227005
+frame: 43
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 267
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 267
+*INFO	: decoupled residual: 7.376182779e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.213471889
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 267
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 267
+*INFO	: general residual: 7.376182779e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.220266104
+frame: 44
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 264
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 264
+*INFO	: decoupled residual: 7.746882665e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.20062995
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 264
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 264
+*INFO	: general residual: 7.746882665e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.209310055
+frame: 45
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 266
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 266
+*INFO	: decoupled residual: 7.917740031e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.213015079
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 266
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 266
+*INFO	: general residual: 7.917740031e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.21233511
+frame: 46
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 265
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 265
+*INFO	: decoupled residual: 7.968496795e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.20282197
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 265
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 265
+*INFO	: general residual: 7.968496795e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.201610088
+frame: 47
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 268
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 268
+*INFO	: decoupled residual: 7.80047586e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.225399017
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 268
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 268
+*INFO	: general residual: 7.80047586e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.22875309
+frame: 48
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 266
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 266
+*INFO	: decoupled residual: 7.914419451e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.210598946
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 266
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 266
+*INFO	: general residual: 7.914419451e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.208131075
+frame: 49
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 271
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 271
+*INFO	: decoupled residual: 7.876463303e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.24999094
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 271
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 271
+*INFO	: general residual: 7.876463303e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.245954037
+frame: 50
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 275
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 275
+*INFO	: decoupled residual: 7.511952283e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.290781021
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 275
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 275
+*INFO	: general residual: 7.511952283e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.288450003
+frame: 51
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 270
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 270
+*INFO	: decoupled residual: 7.934137078e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.239456892
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 270
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 270
+*INFO	: general residual: 7.934137078e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.248182058
+frame: 52
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 276
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 276
+*INFO	: decoupled residual: 7.982219382e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.310904026
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 276
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 276
+*INFO	: general residual: 7.982219382e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.299382925
+frame: 53
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 274
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 274
+*INFO	: decoupled residual: 7.792875104e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.277054071
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 274
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 274
+*INFO	: general residual: 7.792875104e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.271744013
+frame: 54
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 273
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 273
+*INFO	: decoupled residual: 7.95645329e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.282233953
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 273
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 273
+*INFO	: general residual: 7.95645329e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.289486885
+frame: 55
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 274
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 274
+*INFO	: decoupled residual: 7.960726e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.287868023
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 274
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 274
+*INFO	: general residual: 7.960726e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.275753975
+frame: 56
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 279
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 279
+*INFO	: decoupled residual: 7.754443843e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.331653118
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 279
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 279
+*INFO	: general residual: 7.754443843e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.334269047
+frame: 57
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 279
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 279
+*INFO	: decoupled residual: 7.649753471e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.323610067
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 279
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 279
+*INFO	: general residual: 7.649753471e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.324868917
+frame: 58
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 279
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 279
+*INFO	: decoupled residual: 7.944008045e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.321980953
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 279
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 279
+*INFO	: general residual: 7.944008045e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.335266113
+frame: 59
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 281
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 281
+*INFO	: decoupled residual: 7.666834733e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.331327915
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 281
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 281
+*INFO	: general residual: 7.666834733e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.348423958
+frame: 60
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 282
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 282
+*INFO	: decoupled residual: 7.63495548e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.342894077
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 282
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 282
+*INFO	: general residual: 7.63495548e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.355496883
+frame: 61
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 280
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 280
+*INFO	: decoupled residual: 7.953304124e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.329458952
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 280
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 280
+*INFO	: general residual: 7.953304124e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.328138113
+frame: 62
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 283
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 283
+*INFO	: decoupled residual: 7.494521057e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.353653908
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 283
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 283
+*INFO	: general residual: 7.494521057e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.352767944
+frame: 63
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 282
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 282
+*INFO	: decoupled residual: 7.827902358e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.33675909
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 282
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 282
+*INFO	: general residual: 7.827902358e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.352514982
+frame: 64
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 282
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 282
+*INFO	: decoupled residual: 7.751694237e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.356488943
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 282
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 282
+*INFO	: general residual: 7.751694237e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.340720892
+frame: 65
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 285
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 285
+*INFO	: decoupled residual: 7.12980592e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.382549047
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 285
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 285
+*INFO	: general residual: 7.12980592e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.377594948
+frame: 66
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 285
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 285
+*INFO	: decoupled residual: 7.441266716e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.386672974
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 285
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 285
+*INFO	: general residual: 7.441266716e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.375627041
+frame: 67
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 283
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 283
+*INFO	: decoupled residual: 7.59739696e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.355956078
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 283
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 283
+*INFO	: general residual: 7.59739696e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.36729002
+frame: 68
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 284
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 284
+*INFO	: decoupled residual: 7.604021957e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.423294067
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 284
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 284
+*INFO	: general residual: 7.604021957e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.369651079
+frame: 69
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 285
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 285
+*INFO	: decoupled residual: 7.721244553e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.37270093
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 285
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 285
+*INFO	: general residual: 7.721244553e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.375734091
+frame: 70
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 289
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 289
+*INFO	: decoupled residual: 7.319716589e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.399139881
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 289
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 289
+*INFO	: general residual: 7.319716589e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.39925909
+frame: 71
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 284
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 284
+*INFO	: decoupled residual: 7.887401483e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.356609106
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 284
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 284
+*INFO	: general residual: 7.887401483e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.388763905
+frame: 72
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 286
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 286
+*INFO	: decoupled residual: 7.866850711e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.387322903
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 286
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 286
+*INFO	: general residual: 7.866850711e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.370795012
+frame: 73
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 289
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 289
+*INFO	: decoupled residual: 7.759251773e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.394438028
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 289
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 289
+*INFO	: general residual: 7.759251773e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.42553401
+frame: 74
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 286
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 286
+*INFO	: decoupled residual: 7.962281301e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.41028595
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 286
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 286
+*INFO	: general residual: 7.962281301e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.395014048
+frame: 75
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 288
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 288
+*INFO	: decoupled residual: 7.849156822e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.413111925
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 288
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 288
+*INFO	: general residual: 7.849156822e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.402889967
+frame: 76
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 288
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 288
+*INFO	: decoupled residual: 7.937135756e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.398029089
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 288
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 288
+*INFO	: general residual: 7.937135756e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.392230034
+frame: 77
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 291
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 291
+*INFO	: decoupled residual: 7.909455437e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.421710968
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 291
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 291
+*INFO	: general residual: 7.909455437e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.420347929
+frame: 78
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 289
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 289
+*INFO	: decoupled residual: 7.8297851e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.402690887
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 289
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 289
+*INFO	: general residual: 7.8297851e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.414475918
+frame: 79
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 290
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 290
+*INFO	: decoupled residual: 7.805387041e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.403960943
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 290
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 290
+*INFO	: general residual: 7.805387041e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.413367987
+frame: 80
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 292
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 292
+*INFO	: decoupled residual: 7.900625316e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.443026066
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 292
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 292
+*INFO	: general residual: 7.900625316e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.42654705
+frame: 81
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 292
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 292
+*INFO	: decoupled residual: 7.916461424e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.4297719
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 292
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 292
+*INFO	: general residual: 7.916461424e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.448230028
+frame: 82
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 292
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 292
+*INFO	: decoupled residual: 7.99807281e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.429344893
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 292
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 292
+*INFO	: general residual: 7.99807281e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.420649052
+frame: 83
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 294
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 294
+*INFO	: decoupled residual: 7.706608947e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.466569901
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 294
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 294
+*INFO	: general residual: 7.706608947e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.441766024
+frame: 84
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 293
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 293
+*INFO	: decoupled residual: 7.976421715e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.428925037
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 293
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 293
+*INFO	: general residual: 7.976421715e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.446949005
+frame: 85
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 295
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 295
+*INFO	: decoupled residual: 7.775891187e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.444027901
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 295
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 295
+*INFO	: general residual: 7.775891187e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.447911024
+frame: 86
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 294
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 294
+*INFO	: decoupled residual: 7.59268705e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.449316025
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 294
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 294
+*INFO	: general residual: 7.59268705e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.453468084
+frame: 87
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 294
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 294
+*INFO	: decoupled residual: 7.569027769e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.452240944
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 294
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 294
+*INFO	: general residual: 7.569027769e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.448009968
+frame: 88
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 295
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 295
+*INFO	: decoupled residual: 7.72248975e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.463644981
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 295
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 295
+*INFO	: general residual: 7.72248975e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.451698065
+frame: 89
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 297
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 297
+*INFO	: decoupled residual: 7.776157571e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.462124109
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 297
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 297
+*INFO	: general residual: 7.776157571e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.483916998
+frame: 90
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 295
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 295
+*INFO	: decoupled residual: 7.824193482e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.451299906
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 295
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 295
+*INFO	: general residual: 7.824193482e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.454030991
+frame: 91
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 294
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 294
+*INFO	: decoupled residual: 7.865983916e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.456676006
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 294
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 294
+*INFO	: general residual: 7.865983916e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.445580959
+frame: 92
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 298
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 298
+*INFO	: decoupled residual: 7.930601028e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.473870039
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 298
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 298
+*INFO	: general residual: 7.930601028e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.498445034
+frame: 93
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: decoupled cg steps: 299
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 299
+*INFO	: decoupled residual: 7.439532394e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.479614973
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1
+*INFO	: general cg steps: 299
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 299
+*INFO	: general residual: 7.439532394e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.491707087
+frame: 94
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 299
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 299
+*INFO	: decoupled residual: 7.348025568e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.5004251
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 299
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 299
+*INFO	: general residual: 7.348025568e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.484484911
+frame: 95
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 298
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 298
+*INFO	: decoupled residual: 7.691997312e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.478733063
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 0
+*INFO	: general cg steps: 298
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 298
+*INFO	: general residual: 7.691997312e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.487298012
+frame: 96
+dec A.rows() = 35832
+dec J.rows() = 28
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 84
+*INFO	: power iter: 0
+*INFO	: decoupled cg steps: 159
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 160
+*INFO	: decoupled residual: 7.673859445e-05
+*INFO	: decoupled constraints: 22
+*INFO	: decoupled mprgp solving time: 1.697021961
+gen A.rows() = 35832
+gen J.rows() = 28
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 84
+*INFO	: power iter: 0
+*INFO	: general cg steps: 325
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 326
+*INFO	: general residual: 7.852022345e-05
+*INFO	: general constraints: 22
+*INFO	: general mprgp solving time: 3.341166019
+frame: 97
+dec A.rows() = 35832
+dec J.rows() = 12
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 36
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 162
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 163
+*INFO	: decoupled residual: 7.510365712e-05
+*INFO	: decoupled constraints: 10
+*INFO	: decoupled mprgp solving time: 1.757447004
+gen A.rows() = 35832
+gen J.rows() = 12
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 36
+*INFO	: power iter: 7
+*INFO	: general cg steps: 321
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 322
+*INFO	: general residual: 7.655637099e-05
+*INFO	: general constraints: 10
+*INFO	: general mprgp solving time: 3.300654888
+frame: 98
+dec A.rows() = 35832
+dec J.rows() = 18
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 54
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 170
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 172
+*INFO	: decoupled residual: 7.768958568e-05
+*INFO	: decoupled constraints: 13
+*INFO	: decoupled mprgp solving time: 5.364704132
+gen A.rows() = 35832
+gen J.rows() = 18
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 54
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 315
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 316
+*INFO	: general residual: 7.825835799e-05
+*INFO	: general constraints: 13
+*INFO	: general mprgp solving time: 6.723351955
+frame: 99
+dec A.rows() = 35832
+dec J.rows() = 35
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 105
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 167
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 3
+*INFO	: decoupled total iter: 171
+*INFO	: decoupled residual: 7.891681924e-05
+*INFO	: decoupled constraints: 19
+*INFO	: decoupled mprgp solving time: 5.35587883
+gen A.rows() = 35832
+gen J.rows() = 35
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 105
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 343
+*INFO	: general exp steps: 1
+*INFO	: general prop steps: 3
+*INFO	: general total iter: 347
+*INFO	: general residual: 7.645068477e-05
+*INFO	: general constraints: 19
+*INFO	: general mprgp solving time: 7.155382156
+frame: 100
+dec A.rows() = 35832
+dec J.rows() = 28
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 84
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 174
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 177
+*INFO	: decoupled residual: 7.900103755e-05
+*INFO	: decoupled constraints: 14
+*INFO	: decoupled mprgp solving time: 5.396945
+gen A.rows() = 35832
+gen J.rows() = 28
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 84
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 326
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 2
+*INFO	: general total iter: 328
+*INFO	: general residual: 7.703161027e-05
+*INFO	: general constraints: 14
+*INFO	: general mprgp solving time: 6.891267776
+frame: 101
+dec A.rows() = 35832
+dec J.rows() = 15
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 45
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 163
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 165
+*INFO	: decoupled residual: 7.927208455e-05
+*INFO	: decoupled constraints: 8
+*INFO	: decoupled mprgp solving time: 5.2666049
+gen A.rows() = 35832
+gen J.rows() = 15
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 45
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 327
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 2
+*INFO	: general total iter: 329
+*INFO	: general residual: 7.420424178e-05
+*INFO	: general constraints: 8
+*INFO	: general mprgp solving time: 6.893633842
+frame: 102
+dec A.rows() = 35832
+dec J.rows() = 10
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 30
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 159
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 160
+*INFO	: decoupled residual: 7.405739925e-05
+*INFO	: decoupled constraints: 6
+*INFO	: decoupled mprgp solving time: 5.198554039
+gen A.rows() = 35832
+gen J.rows() = 10
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 30
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 317
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 318
+*INFO	: general residual: 7.656602463e-05
+*INFO	: general constraints: 6
+*INFO	: general mprgp solving time: 6.70882988
+frame: 103
+dec A.rows() = 35832
+dec J.rows() = 1
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 3
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 160
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 161
+*INFO	: decoupled residual: 7.568820634e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 5.213766098
+gen A.rows() = 35832
+gen J.rows() = 1
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 3
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 311
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 312
+*INFO	: general residual: 7.781697426e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 6.616905212
+frame: 104
+dec A.rows() = 35832
+dec J.rows() = 8
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 24
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 165
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 166
+*INFO	: decoupled residual: 7.975902016e-05
+*INFO	: decoupled constraints: 5
+*INFO	: decoupled mprgp solving time: 5.278269768
+gen A.rows() = 35832
+gen J.rows() = 8
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 24
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 317
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 318
+*INFO	: general residual: 7.838750893e-05
+*INFO	: general constraints: 5
+*INFO	: general mprgp solving time: 6.700911045
+frame: 105
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 300
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 300
+*INFO	: decoupled residual: 7.817891489e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 6.013798237
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 300
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 300
+*INFO	: general residual: 7.817891489e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 5.985712051
+frame: 106
+dec A.rows() = 35832
+dec J.rows() = 3
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 9
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 160
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 161
+*INFO	: decoupled residual: 7.741254964e-05
+*INFO	: decoupled constraints: 2
+*INFO	: decoupled mprgp solving time: 5.221159935
+gen A.rows() = 35832
+gen J.rows() = 3
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 9
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 325
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 326
+*INFO	: general residual: 7.87372296e-05
+*INFO	: general constraints: 2
+*INFO	: general mprgp solving time: 6.80236578
+frame: 107
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 18
+*INFO	: decoupled cg steps: 300
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 300
+*INFO	: decoupled residual: 7.870676064e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.559087992
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 16
+*INFO	: general cg steps: 300
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 300
+*INFO	: general residual: 7.870676064e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.540138006
+frame: 108
+dec A.rows() = 35832
+dec J.rows() = 3
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 9
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 157
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 158
+*INFO	: decoupled residual: 7.979970248e-05
+*INFO	: decoupled constraints: 2
+*INFO	: decoupled mprgp solving time: 1.710374951
+gen A.rows() = 35832
+gen J.rows() = 3
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 9
+*INFO	: power iter: 7
+*INFO	: general cg steps: 332
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 333
+*INFO	: general residual: 7.503626373e-05
+*INFO	: general constraints: 2
+*INFO	: general mprgp solving time: 3.375060081
+frame: 109
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 302
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 302
+*INFO	: decoupled residual: 7.697383538e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.544187069
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 7
+*INFO	: general cg steps: 302
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 302
+*INFO	: general residual: 7.697383538e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.537622929
+frame: 110
+dec A.rows() = 35832
+dec J.rows() = 3
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 9
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 162
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 163
+*INFO	: decoupled residual: 7.736891362e-05
+*INFO	: decoupled constraints: 2
+*INFO	: decoupled mprgp solving time: 1.75049901
+gen A.rows() = 35832
+gen J.rows() = 3
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 9
+*INFO	: power iter: 6
+*INFO	: general cg steps: 327
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 328
+*INFO	: general residual: 7.966613395e-05
+*INFO	: general constraints: 2
+*INFO	: general mprgp solving time: 3.344789028
+frame: 111
+dec A.rows() = 35832
+dec J.rows() = 0
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 0
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 304
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 304
+*INFO	: decoupled residual: 7.808002273e-05
+*INFO	: decoupled constraints: 0
+*INFO	: decoupled mprgp solving time: 2.547329903
+gen A.rows() = 35832
+gen J.rows() = 0
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 0
+*INFO	: power iter: 6
+*INFO	: general cg steps: 304
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 304
+*INFO	: general residual: 7.808002273e-05
+*INFO	: general constraints: 0
+*INFO	: general mprgp solving time: 2.544197083
+frame: 112
+dec A.rows() = 35832
+dec J.rows() = 3
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 18
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 149
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 149
+*INFO	: decoupled residual: 7.921242356e-05
+*INFO	: decoupled constraints: 3
+*INFO	: decoupled mprgp solving time: 1.594535947
+gen A.rows() = 35832
+gen J.rows() = 4
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 30
+*INFO	: power iter: 6
+*INFO	: general cg steps: 305
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 305
+*INFO	: general residual: 7.897313462e-05
+*INFO	: general constraints: 4
+*INFO	: general mprgp solving time: 3.08148694
+frame: 113
+dec A.rows() = 35832
+dec J.rows() = 13
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 147
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 171
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 173
+*INFO	: decoupled residual: 7.688785212e-05
+*INFO	: decoupled constraints: 11
+*INFO	: decoupled mprgp solving time: 5.350855827
+gen A.rows() = 35832
+gen J.rows() = 42
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 495
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 267
+*INFO	: general exp steps: 732
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.04594772467
+*INFO	: general constraints: 14
+*INFO	: general mprgp solving time: 25.73702812
+frame: 114
+dec A.rows() = 35832
+dec J.rows() = 23
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 177
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 163
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 164
+*INFO	: decoupled residual: 7.578139567e-05
+*INFO	: decoupled constraints: 20
+*INFO	: decoupled mprgp solving time: 5.25213623
+gen A.rows() = 35832
+gen J.rows() = 51
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 513
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 124
+*INFO	: general exp steps: 876
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.0407560676
+*INFO	: general constraints: 25
+*INFO	: general mprgp solving time: 28.65640259
+frame: 115
+dec A.rows() = 35832
+dec J.rows() = 19
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 192
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 163
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 164
+*INFO	: decoupled residual: 7.985880732e-05
+*INFO	: decoupled constraints: 18
+*INFO	: decoupled mprgp solving time: 5.263901234
+gen A.rows() = 35832
+gen J.rows() = 51
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 576
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 190
+*INFO	: general exp steps: 810
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03506578548
+*INFO	: general constraints: 27
+*INFO	: general mprgp solving time: 27.63793182
+frame: 116
+dec A.rows() = 35832
+dec J.rows() = 42
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 270
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 180
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 183
+*INFO	: decoupled residual: 7.422768283e-05
+*INFO	: decoupled constraints: 34
+*INFO	: decoupled mprgp solving time: 5.473741055
+gen A.rows() = 35832
+gen J.rows() = 71
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 618
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 95
+*INFO	: general exp steps: 905
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03388880707
+*INFO	: general constraints: 40
+*INFO	: general mprgp solving time: 21.37573242
+frame: 117
+dec A.rows() = 35832
+dec J.rows() = 21
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 171
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 151
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 151
+*INFO	: decoupled residual: 7.95711695e-05
+*INFO	: decoupled constraints: 21
+*INFO	: decoupled mprgp solving time: 5.113988876
+gen A.rows() = 35832
+gen J.rows() = 50
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 519
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 165
+*INFO	: general exp steps: 835
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02789414556
+*INFO	: general constraints: 25
+*INFO	: general mprgp solving time: 27.98963547
+frame: 118
+dec A.rows() = 35832
+dec J.rows() = 55
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 354
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 162
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 163
+*INFO	: decoupled residual: 7.861785253e-05
+*INFO	: decoupled constraints: 45
+*INFO	: decoupled mprgp solving time: 5.258758068
+gen A.rows() = 35832
+gen J.rows() = 94
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 822
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 121
+*INFO	: general exp steps: 879
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.01883518659
+*INFO	: general constraints: 56
+*INFO	: general mprgp solving time: 30.08548164
+frame: 119
+dec A.rows() = 35832
+dec J.rows() = 32
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 303
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 168
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 169
+*INFO	: decoupled residual: 7.892256884e-05
+*INFO	: decoupled constraints: 25
+*INFO	: decoupled mprgp solving time: 5.349173069
+gen A.rows() = 35832
+gen J.rows() = 74
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 807
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 83
+*INFO	: general exp steps: 917
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03432184049
+*INFO	: general constraints: 47
+*INFO	: general mprgp solving time: 21.75500488
+frame: 120
+dec A.rows() = 35832
+dec J.rows() = 64
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 336
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 183
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 3
+*INFO	: decoupled total iter: 187
+*INFO	: decoupled residual: 7.772057404e-05
+*INFO	: decoupled constraints: 41
+*INFO	: decoupled mprgp solving time: 5.533530235
+gen A.rows() = 35832
+gen J.rows() = 98
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 744
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 85
+*INFO	: general exp steps: 915
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.04226469285
+*INFO	: general constraints: 69
+*INFO	: general mprgp solving time: 25.94492912
+frame: 121
+dec A.rows() = 35832
+dec J.rows() = 28
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 255
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 172
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 174
+*INFO	: decoupled residual: 7.947075131e-05
+*INFO	: decoupled constraints: 21
+*INFO	: decoupled mprgp solving time: 5.375998974
+gen A.rows() = 35832
+gen J.rows() = 68
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 735
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 84
+*INFO	: general exp steps: 916
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03189600252
+*INFO	: general constraints: 35
+*INFO	: general mprgp solving time: 21.1816864
+frame: 122
+dec A.rows() = 35832
+dec J.rows() = 54
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 306
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 184
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 187
+*INFO	: decoupled residual: 7.402375611e-05
+*INFO	: decoupled constraints: 32
+*INFO	: decoupled mprgp solving time: 5.509654045
+gen A.rows() = 35832
+gen J.rows() = 93
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 774
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 87
+*INFO	: general exp steps: 913
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02702349623
+*INFO	: general constraints: 65
+*INFO	: general mprgp solving time: 25.21793556
+frame: 123
+dec A.rows() = 35832
+dec J.rows() = 21
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 189
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 166
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 167
+*INFO	: decoupled residual: 7.984707961e-05
+*INFO	: decoupled constraints: 16
+*INFO	: decoupled mprgp solving time: 5.205308914
+gen A.rows() = 35832
+gen J.rows() = 49
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 525
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 229
+*INFO	: general exp steps: 770
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.004982866137
+*INFO	: general constraints: 23
+*INFO	: general mprgp solving time: 26.14087677
+frame: 124
+dec A.rows() = 35832
+dec J.rows() = 43
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 237
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 182
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 3
+*INFO	: decoupled total iter: 186
+*INFO	: decoupled residual: 7.606553179e-05
+*INFO	: decoupled constraints: 23
+*INFO	: decoupled mprgp solving time: 5.489462852
+gen A.rows() = 35832
+gen J.rows() = 59
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 429
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 99
+*INFO	: general exp steps: 901
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.01837309633
+*INFO	: general constraints: 48
+*INFO	: general mprgp solving time: 18.87680054
+frame: 125
+dec A.rows() = 35832
+dec J.rows() = 14
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 105
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 168
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 169
+*INFO	: decoupled residual: 7.400700892e-05
+*INFO	: decoupled constraints: 11
+*INFO	: decoupled mprgp solving time: 5.244225025
+gen A.rows() = 35832
+gen J.rows() = 26
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 249
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 142
+*INFO	: general exp steps: 858
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.007408306006
+*INFO	: general constraints: 16
+*INFO	: general mprgp solving time: 16.9894104
+frame: 126
+dec A.rows() = 35832
+dec J.rows() = 27
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 162
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 169
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 171
+*INFO	: decoupled residual: 7.186186552e-05
+*INFO	: decoupled constraints: 16
+*INFO	: decoupled mprgp solving time: 5.300350189
+gen A.rows() = 35832
+gen J.rows() = 40
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 318
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 332
+*INFO	: general exp steps: 4
+*INFO	: general prop steps: 2
+*INFO	: general total iter: 338
+*INFO	: general residual: 7.328567796e-05
+*INFO	: general constraints: 18
+*INFO	: general mprgp solving time: 7.052072048
+frame: 127
+dec A.rows() = 35832
+dec J.rows() = 10
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 93
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 168
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 169
+*INFO	: decoupled residual: 7.846967153e-05
+*INFO	: decoupled constraints: 9
+*INFO	: decoupled mprgp solving time: 5.260177135
+gen A.rows() = 35832
+gen J.rows() = 18
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 189
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 327
+*INFO	: general exp steps: 0
+*INFO	: general prop steps: 1
+*INFO	: general total iter: 328
+*INFO	: general residual: 7.955782388e-05
+*INFO	: general constraints: 10
+*INFO	: general mprgp solving time: 6.755032063
+frame: 128
+dec A.rows() = 35832
+dec J.rows() = 24
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 153
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 180
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 182
+*INFO	: decoupled residual: 7.668721432e-05
+*INFO	: decoupled constraints: 18
+*INFO	: decoupled mprgp solving time: 5.376390934
+gen A.rows() = 35832
+gen J.rows() = 45
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 405
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 165
+*INFO	: general exp steps: 835
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.04068232681
+*INFO	: general constraints: 27
+*INFO	: general mprgp solving time: 26.92753792
+frame: 129
+dec A.rows() = 35832
+dec J.rows() = 29
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 321
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 170
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 171
+*INFO	: decoupled residual: 7.431609615e-05
+*INFO	: decoupled constraints: 24
+*INFO	: decoupled mprgp solving time: 5.264448166
+gen A.rows() = 35832
+gen J.rows() = 85
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 993
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 86
+*INFO	: general exp steps: 914
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03852630063
+*INFO	: general constraints: 49
+*INFO	: general mprgp solving time: 24.00096893
+frame: 130
+dec A.rows() = 35832
+dec J.rows() = 41
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 348
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 174
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 176
+*INFO	: decoupled residual: 7.871517673e-05
+*INFO	: decoupled constraints: 31
+*INFO	: decoupled mprgp solving time: 5.305839062
+gen A.rows() = 35832
+gen J.rows() = 104
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1104
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 105
+*INFO	: general exp steps: 895
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.01972262132
+*INFO	: general constraints: 70
+*INFO	: general mprgp solving time: 27.93903351
+frame: 131
+dec A.rows() = 35832
+dec J.rows() = 27
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 297
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 164
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 165
+*INFO	: decoupled residual: 7.584095661e-05
+*INFO	: decoupled constraints: 23
+*INFO	: decoupled mprgp solving time: 5.20859623
+gen A.rows() = 35832
+gen J.rows() = 90
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1053
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 110
+*INFO	: general exp steps: 890
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02835596738
+*INFO	: general constraints: 32
+*INFO	: general mprgp solving time: 27.32715607
+frame: 132
+dec A.rows() = 35832
+dec J.rows() = 48
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 360
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 179
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 181
+*INFO	: decoupled residual: 7.762269608e-05
+*INFO	: decoupled constraints: 36
+*INFO	: decoupled mprgp solving time: 5.405121803
+gen A.rows() = 35832
+gen J.rows() = 98
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 960
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 119
+*INFO	: general exp steps: 881
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03474747991
+*INFO	: general constraints: 48
+*INFO	: general mprgp solving time: 40.60873795
+frame: 133
+dec A.rows() = 35832
+dec J.rows() = 28
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 282
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 167
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 168
+*INFO	: decoupled residual: 7.858169441e-05
+*INFO	: decoupled constraints: 26
+*INFO	: decoupled mprgp solving time: 5.247724056
+gen A.rows() = 35832
+gen J.rows() = 69
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 774
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 126
+*INFO	: general exp steps: 874
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02088730956
+*INFO	: general constraints: 26
+*INFO	: general mprgp solving time: 31.94776344
+frame: 134
+dec A.rows() = 35832
+dec J.rows() = 56
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 402
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 179
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 181
+*INFO	: decoupled residual: 7.514858941e-05
+*INFO	: decoupled constraints: 42
+*INFO	: decoupled mprgp solving time: 5.384370804
+gen A.rows() = 35832
+gen J.rows() = 114
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1098
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 94
+*INFO	: general exp steps: 906
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03083556899
+*INFO	: general constraints: 77
+*INFO	: general mprgp solving time: 31.21980858
+frame: 135
+dec A.rows() = 35832
+dec J.rows() = 39
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 360
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 180
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 182
+*INFO	: decoupled residual: 7.846256308e-05
+*INFO	: decoupled constraints: 32
+*INFO	: decoupled mprgp solving time: 5.417151928
+gen A.rows() = 35832
+gen J.rows() = 97
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1056
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 94
+*INFO	: general exp steps: 906
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03313847887
+*INFO	: general constraints: 46
+*INFO	: general mprgp solving time: 40.82553482
+frame: 136
+dec A.rows() = 35832
+dec J.rows() = 52
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 363
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 163
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 164
+*INFO	: decoupled residual: 7.741527202e-05
+*INFO	: decoupled constraints: 44
+*INFO	: decoupled mprgp solving time: 5.243688107
+gen A.rows() = 35832
+gen J.rows() = 105
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 999
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 102
+*INFO	: general exp steps: 898
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.04471528726
+*INFO	: general constraints: 67
+*INFO	: general mprgp solving time: 31.15114021
+frame: 137
+dec A.rows() = 35832
+dec J.rows() = 34
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 309
+*INFO	: power iter: 985
+*INFO	: decoupled cg steps: 174
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 175
+*INFO	: decoupled residual: 7.894188649e-05
+*INFO	: decoupled constraints: 32
+*INFO	: decoupled mprgp solving time: 5.264959812
+gen A.rows() = 35832
+gen J.rows() = 75
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 801
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 101
+*INFO	: general exp steps: 899
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03228313137
+*INFO	: general constraints: 42
+*INFO	: general mprgp solving time: 22.2227459
+frame: 138
+dec A.rows() = 35832
+dec J.rows() = 50
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 348
+*INFO	: power iter: 20
+*INFO	: decoupled cg steps: 163
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 164
+*INFO	: decoupled residual: 7.916000079e-05
+*INFO	: decoupled constraints: 41
+*INFO	: decoupled mprgp solving time: 1.796221018
+gen A.rows() = 35832
+gen J.rows() = 83
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 744
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 100
+*INFO	: general exp steps: 900
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02016425164
+*INFO	: general constraints: 64
+*INFO	: general mprgp solving time: 22.05451393
+frame: 139
+dec A.rows() = 35832
+dec J.rows() = 27
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 216
+*INFO	: power iter: 13
+*INFO	: decoupled cg steps: 158
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 0
+*INFO	: decoupled total iter: 158
+*INFO	: decoupled residual: 7.660989968e-05
+*INFO	: decoupled constraints: 27
+*INFO	: decoupled mprgp solving time: 1.703454971
+gen A.rows() = 35832
+gen J.rows() = 47
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 456
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 103
+*INFO	: general exp steps: 897
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.01978067122
+*INFO	: general constraints: 36
+*INFO	: general mprgp solving time: 18.06553078
+frame: 140
+dec A.rows() = 35832
+dec J.rows() = 48
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 342
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 173
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 176
+*INFO	: decoupled residual: 7.589381454e-05
+*INFO	: decoupled constraints: 37
+*INFO	: decoupled mprgp solving time: 1.891991973
+gen A.rows() = 35832
+gen J.rows() = 88
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 822
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 74
+*INFO	: general exp steps: 926
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03956215382
+*INFO	: general constraints: 51
+*INFO	: general mprgp solving time: 37.13142014
+frame: 141
+dec A.rows() = 35832
+dec J.rows() = 34
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 273
+*INFO	: power iter: 11
+*INFO	: decoupled cg steps: 182
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 185
+*INFO	: decoupled residual: 7.973055938e-05
+*INFO	: decoupled constraints: 28
+*INFO	: decoupled mprgp solving time: 2.006593943
+gen A.rows() = 35832
+gen J.rows() = 69
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 693
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 122
+*INFO	: general exp steps: 878
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.01852500789
+*INFO	: general constraints: 45
+*INFO	: general mprgp solving time: 29.39928055
+frame: 142
+dec A.rows() = 35832
+dec J.rows() = 43
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 291
+*INFO	: power iter: 11
+*INFO	: decoupled cg steps: 176
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 178
+*INFO	: decoupled residual: 7.699859696e-05
+*INFO	: decoupled constraints: 31
+*INFO	: decoupled mprgp solving time: 1.931815028
+gen A.rows() = 35832
+gen J.rows() = 74
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 663
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 125
+*INFO	: general exp steps: 875
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02918915854
+*INFO	: general constraints: 49
+*INFO	: general mprgp solving time: 23.64812469
+frame: 143
+dec A.rows() = 35832
+dec J.rows() = 40
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 345
+*INFO	: power iter: 11
+*INFO	: decoupled cg steps: 172
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 173
+*INFO	: decoupled residual: 7.991179569e-05
+*INFO	: decoupled constraints: 32
+*INFO	: decoupled mprgp solving time: 1.874161959
+gen A.rows() = 35832
+gen J.rows() = 90
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 945
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 352
+*INFO	: general exp steps: 648
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.06073749261
+*INFO	: general constraints: 43
+*INFO	: general mprgp solving time: 32.65274048
+frame: 144
+dec A.rows() = 35832
+dec J.rows() = 61
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 552
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 179
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 181
+*INFO	: decoupled residual: 7.974477015e-05
+*INFO	: decoupled constraints: 52
+*INFO	: decoupled mprgp solving time: 1.967368007
+gen A.rows() = 35832
+gen J.rows() = 136
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1452
+*INFO	: power iter: 927
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 81
+*INFO	: general exp steps: 919
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05608107082
+*INFO	: general constraints: 67
+*INFO	: general mprgp solving time: 62.45999908
+frame: 145
+dec A.rows() = 35832
+dec J.rows() = 50
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 483
+*INFO	: power iter: 11
+*INFO	: decoupled cg steps: 170
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 171
+*INFO	: decoupled residual: 7.656956816e-05
+*INFO	: decoupled constraints: 47
+*INFO	: decoupled mprgp solving time: 1.835587025
+gen A.rows() = 35832
+gen J.rows() = 130
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1443
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 83
+*INFO	: general exp steps: 917
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05817410377
+*INFO	: general constraints: 70
+*INFO	: general mprgp solving time: 40.83262634
+frame: 146
+dec A.rows() = 35832
+dec J.rows() = 61
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 543
+*INFO	: power iter: 9
+*INFO	: decoupled cg steps: 177
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 180
+*INFO	: decoupled residual: 7.930175427e-05
+*INFO	: decoupled constraints: 48
+*INFO	: decoupled mprgp solving time: 1.961410046
+gen A.rows() = 35832
+gen J.rows() = 150
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1611
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 74
+*INFO	: general exp steps: 926
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.0469381697
+*INFO	: general constraints: 88
+*INFO	: general mprgp solving time: 51.27619553
+frame: 147
+dec A.rows() = 35832
+dec J.rows() = 55
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 507
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 174
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 176
+*INFO	: decoupled residual: 7.624354876e-05
+*INFO	: decoupled constraints: 49
+*INFO	: decoupled mprgp solving time: 1.890130997
+gen A.rows() = 35832
+gen J.rows() = 124
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1335
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 116
+*INFO	: general exp steps: 884
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02031834105
+*INFO	: general constraints: 82
+*INFO	: general mprgp solving time: 34.76324844
+frame: 148
+dec A.rows() = 35832
+dec J.rows() = 61
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 507
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 179
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 181
+*INFO	: decoupled residual: 7.462108735e-05
+*INFO	: decoupled constraints: 53
+*INFO	: decoupled mprgp solving time: 1.959059954
+gen A.rows() = 35832
+gen J.rows() = 138
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1431
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 102
+*INFO	: general exp steps: 898
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.0293069235
+*INFO	: general constraints: 83
+*INFO	: general mprgp solving time: 42.24462891
+frame: 149
+dec A.rows() = 35832
+dec J.rows() = 53
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 465
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 164
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 165
+*INFO	: decoupled residual: 7.863232082e-05
+*INFO	: decoupled constraints: 48
+*INFO	: decoupled mprgp solving time: 1.789942026
+gen A.rows() = 35832
+gen J.rows() = 135
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1449
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 90
+*INFO	: general exp steps: 910
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03942313773
+*INFO	: general constraints: 73
+*INFO	: general mprgp solving time: 43.63943863
+frame: 150
+dec A.rows() = 35832
+dec J.rows() = 70
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 597
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 171
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 172
+*INFO	: decoupled residual: 7.944010738e-05
+*INFO	: decoupled constraints: 62
+*INFO	: decoupled mprgp solving time: 1.855780959
+gen A.rows() = 35832
+gen J.rows() = 167
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1761
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 74
+*INFO	: general exp steps: 926
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.04480627156
+*INFO	: general constraints: 108
+*INFO	: general mprgp solving time: 60.44843674
+frame: 151
+dec A.rows() = 35832
+dec J.rows() = 62
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 573
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 193
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 196
+*INFO	: decoupled residual: 7.8819971e-05
+*INFO	: decoupled constraints: 49
+*INFO	: decoupled mprgp solving time: 2.117082119
+gen A.rows() = 35832
+gen J.rows() = 137
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1473
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 195
+*INFO	: general exp steps: 805
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03616186811
+*INFO	: general constraints: 83
+*INFO	: general mprgp solving time: 44.27672958
+frame: 152
+dec A.rows() = 35832
+dec J.rows() = 58
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 453
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 169
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 171
+*INFO	: decoupled residual: 7.523858653e-05
+*INFO	: decoupled constraints: 47
+*INFO	: decoupled mprgp solving time: 1.842664957
+gen A.rows() = 35832
+gen J.rows() = 123
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1233
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 105
+*INFO	: general exp steps: 895
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02525940662
+*INFO	: general constraints: 70
+*INFO	: general mprgp solving time: 37.01779556
+frame: 153
+dec A.rows() = 35832
+dec J.rows() = 52
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 471
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 176
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 178
+*INFO	: decoupled residual: 7.907407391e-05
+*INFO	: decoupled constraints: 45
+*INFO	: decoupled mprgp solving time: 1.918488979
+gen A.rows() = 35832
+gen J.rows() = 109
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1155
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 137
+*INFO	: general exp steps: 863
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02338958635
+*INFO	: general constraints: 65
+*INFO	: general mprgp solving time: 30.84480667
+frame: 154
+dec A.rows() = 35832
+dec J.rows() = 58
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 462
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 174
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 176
+*INFO	: decoupled residual: 5.286552716e-05
+*INFO	: decoupled constraints: 44
+*INFO	: decoupled mprgp solving time: 1.88983798
+gen A.rows() = 35832
+gen J.rows() = 105
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1026
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 104
+*INFO	: general exp steps: 896
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.0233186313
+*INFO	: general constraints: 71
+*INFO	: general mprgp solving time: 28.42507553
+frame: 155
+dec A.rows() = 35832
+dec J.rows() = 40
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 363
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 167
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 168
+*INFO	: decoupled residual: 7.906537396e-05
+*INFO	: decoupled constraints: 32
+*INFO	: decoupled mprgp solving time: 1.808403015
+gen A.rows() = 35832
+gen J.rows() = 78
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 819
+*INFO	: power iter: 1001
+*INFO	: general cg steps: 361
+*INFO	: general exp steps: 1
+*INFO	: general prop steps: 2
+*INFO	: general total iter: 364
+*INFO	: general residual: 7.843281307e-05
+*INFO	: general constraints: 42
+*INFO	: general mprgp solving time: 8.371829987
+frame: 156
+dec A.rows() = 35832
+dec J.rows() = 54
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 441
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 173
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 175
+*INFO	: decoupled residual: 7.541015743e-05
+*INFO	: decoupled constraints: 43
+*INFO	: decoupled mprgp solving time: 1.889325976
+gen A.rows() = 35832
+gen J.rows() = 94
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 921
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 116
+*INFO	: general exp steps: 884
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.01476423094
+*INFO	: general constraints: 75
+*INFO	: general mprgp solving time: 23.41677284
+frame: 157
+dec A.rows() = 35832
+dec J.rows() = 35
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 348
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 190
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 192
+*INFO	: decoupled residual: 7.746306402e-05
+*INFO	: decoupled constraints: 28
+*INFO	: decoupled mprgp solving time: 2.059113979
+gen A.rows() = 35832
+gen J.rows() = 67
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 732
+*INFO	: power iter: 1001
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 117
+*INFO	: general exp steps: 883
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03644115589
+*INFO	: general constraints: 44
+*INFO	: general mprgp solving time: 30.32008362
+frame: 158
+dec A.rows() = 35832
+dec J.rows() = 57
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 495
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 176
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 177
+*INFO	: decoupled residual: 7.864287286e-05
+*INFO	: decoupled constraints: 49
+*INFO	: decoupled mprgp solving time: 1.874894023
+gen A.rows() = 35832
+gen J.rows() = 125
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1311
+*INFO	: power iter: 971
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 122
+*INFO	: general exp steps: 878
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02511210497
+*INFO	: general constraints: 82
+*INFO	: general mprgp solving time: 39.46053314
+frame: 159
+dec A.rows() = 35832
+dec J.rows() = 43
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 444
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 170
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 171
+*INFO	: decoupled residual: 7.870075802e-05
+*INFO	: decoupled constraints: 37
+*INFO	: decoupled mprgp solving time: 1.835155964
+gen A.rows() = 35832
+gen J.rows() = 114
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1296
+*INFO	: power iter: 71
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 99
+*INFO	: general exp steps: 901
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03786019536
+*INFO	: general constraints: 43
+*INFO	: general mprgp solving time: 47.2377243
+frame: 160
+dec A.rows() = 35832
+dec J.rows() = 61
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 525
+*INFO	: power iter: 7
+*INFO	: decoupled cg steps: 179
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 182
+*INFO	: decoupled residual: 7.531154461e-05
+*INFO	: decoupled constraints: 46
+*INFO	: decoupled mprgp solving time: 1.958232045
+gen A.rows() = 35832
+gen J.rows() = 132
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1377
+*INFO	: power iter: 40
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 92
+*INFO	: general exp steps: 908
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03490523979
+*INFO	: general constraints: 79
+*INFO	: general mprgp solving time: 36.02035141
+frame: 161
+dec A.rows() = 35832
+dec J.rows() = 38
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 375
+*INFO	: power iter: 9
+*INFO	: decoupled cg steps: 179
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 182
+*INFO	: decoupled residual: 7.900582698e-05
+*INFO	: decoupled constraints: 33
+*INFO	: decoupled mprgp solving time: 1.954009056
+gen A.rows() = 35832
+gen J.rows() = 102
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1143
+*INFO	: power iter: 36
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 96
+*INFO	: general exp steps: 904
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03413172001
+*INFO	: general constraints: 60
+*INFO	: general mprgp solving time: 24.48227119
+frame: 162
+dec A.rows() = 35832
+dec J.rows() = 59
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 510
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 172
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 175
+*INFO	: decoupled residual: 7.917011431e-05
+*INFO	: decoupled constraints: 46
+*INFO	: decoupled mprgp solving time: 1.890480042
+gen A.rows() = 35832
+gen J.rows() = 130
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1362
+*INFO	: power iter: 19
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 104
+*INFO	: general exp steps: 896
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.01987921412
+*INFO	: general constraints: 87
+*INFO	: general mprgp solving time: 34.17967606
+frame: 163
+dec A.rows() = 35832
+dec J.rows() = 38
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 366
+*INFO	: power iter: 11
+*INFO	: decoupled cg steps: 178
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 181
+*INFO	: decoupled residual: 7.659014922e-05
+*INFO	: decoupled constraints: 36
+*INFO	: decoupled mprgp solving time: 1.969315052
+gen A.rows() = 35832
+gen J.rows() = 92
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1014
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 114
+*INFO	: general exp steps: 886
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02223630657
+*INFO	: general constraints: 50
+*INFO	: general mprgp solving time: 21.80717468
+frame: 164
+dec A.rows() = 35832
+dec J.rows() = 57
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 450
+*INFO	: power iter: 12
+*INFO	: decoupled cg steps: 175
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 178
+*INFO	: decoupled residual: 7.464658696e-05
+*INFO	: decoupled constraints: 45
+*INFO	: decoupled mprgp solving time: 1.935065985
+gen A.rows() = 35832
+gen J.rows() = 110
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1086
+*INFO	: power iter: 13
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 116
+*INFO	: general exp steps: 884
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.01559990117
+*INFO	: general constraints: 81
+*INFO	: general mprgp solving time: 24.69166565
+frame: 165
+dec A.rows() = 35832
+dec J.rows() = 52
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 516
+*INFO	: power iter: 14
+*INFO	: decoupled cg steps: 171
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 174
+*INFO	: decoupled residual: 7.893298742e-05
+*INFO	: decoupled constraints: 44
+*INFO	: decoupled mprgp solving time: 1.88774097
+gen A.rows() = 35832
+gen J.rows() = 127
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1416
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 87
+*INFO	: general exp steps: 913
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.03260591168
+*INFO	: general constraints: 84
+*INFO	: general mprgp solving time: 32.79942703
+frame: 166
+dec A.rows() = 35832
+dec J.rows() = 62
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 528
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 173
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 174
+*INFO	: decoupled residual: 7.890908911e-05
+*INFO	: decoupled constraints: 53
+*INFO	: decoupled mprgp solving time: 5.308527946
+gen A.rows() = 35832
+gen J.rows() = 129
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1332
+*INFO	: power iter: 12
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 101
+*INFO	: general exp steps: 899
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.0256272387
+*INFO	: general constraints: 81
+*INFO	: general mprgp solving time: 34.27473068
+frame: 167
+dec A.rows() = 35832
+dec J.rows() = 59
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 537
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 186
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 188
+*INFO	: decoupled residual: 7.645221396e-05
+*INFO	: decoupled constraints: 47
+*INFO	: decoupled mprgp solving time: 5.466910839
+gen A.rows() = 35832
+gen J.rows() = 129
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1377
+*INFO	: power iter: 13
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 101
+*INFO	: general exp steps: 899
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02341960679
+*INFO	: general constraints: 92
+*INFO	: general mprgp solving time: 32.66775513
+frame: 168
+dec A.rows() = 35832
+dec J.rows() = 69
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 513
+*INFO	: power iter: 15
+*INFO	: decoupled cg steps: 182
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 184
+*INFO	: decoupled residual: 7.742897029e-05
+*INFO	: decoupled constraints: 59
+*INFO	: decoupled mprgp solving time: 1.997200966
+gen A.rows() = 35832
+gen J.rows() = 124
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1173
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 109
+*INFO	: general exp steps: 891
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.0186208946
+*INFO	: general constraints: 88
+*INFO	: general mprgp solving time: 30.04872131
+frame: 169
+dec A.rows() = 35832
+dec J.rows() = 50
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 465
+*INFO	: power iter: 9
+*INFO	: decoupled cg steps: 167
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 168
+*INFO	: decoupled residual: 7.829219433e-05
+*INFO	: decoupled constraints: 44
+*INFO	: decoupled mprgp solving time: 1.803647041
+gen A.rows() = 35832
+gen J.rows() = 103
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1101
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 122
+*INFO	: general exp steps: 878
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02015464127
+*INFO	: general constraints: 65
+*INFO	: general mprgp solving time: 24.05351067
+frame: 170
+dec A.rows() = 35832
+dec J.rows() = 97
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 624
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 180
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 182
+*INFO	: decoupled residual: 7.465584529e-05
+*INFO	: decoupled constraints: 73
+*INFO	: decoupled mprgp solving time: 1.958660007
+gen A.rows() = 35832
+gen J.rows() = 163
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1416
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 95
+*INFO	: general exp steps: 905
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02868392106
+*INFO	: general constraints: 120
+*INFO	: general mprgp solving time: 50.09230423
+frame: 171
+dec A.rows() = 35832
+dec J.rows() = 59
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 546
+*INFO	: power iter: 6
+*INFO	: decoupled cg steps: 181
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 183
+*INFO	: decoupled residual: 7.625664209e-05
+*INFO	: decoupled constraints: 48
+*INFO	: decoupled mprgp solving time: 1.958634019
+gen A.rows() = 35832
+gen J.rows() = 132
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1422
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 259
+*INFO	: general exp steps: 741
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.02292023871
+*INFO	: general constraints: 80
+*INFO	: general mprgp solving time: 47.03356171
+frame: 172
+dec A.rows() = 35832
+dec J.rows() = 101
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 699
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 187
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 190
+*INFO	: decoupled residual: 7.977268147e-05
+*INFO	: decoupled constraints: 79
+*INFO	: decoupled mprgp solving time: 2.068387032
+gen A.rows() = 35832
+gen J.rows() = 167
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1491
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 105
+*INFO	: general exp steps: 895
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.031867241
+*INFO	: general constraints: 110
+*INFO	: general mprgp solving time: 57.50997925
+frame: 173
+dec A.rows() = 35832
+dec J.rows() = 70
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 606
+*INFO	: power iter: 9
+*INFO	: decoupled cg steps: 197
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 3
+*INFO	: decoupled total iter: 200
+*INFO	: decoupled residual: 7.957205414e-05
+*INFO	: decoupled constraints: 57
+*INFO	: decoupled mprgp solving time: 2.162412882
+gen A.rows() = 35832
+gen J.rows() = 156
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 1638
+*INFO	: power iter: 7
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 434
+*INFO	: general exp steps: 566
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05555967986
+*INFO	: general constraints: 98
+*INFO	: general mprgp solving time: 56.37182617
+frame: 174
+dec A.rows() = 35832
+dec J.rows() = 104
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 843
+*INFO	: power iter: 11
+*INFO	: decoupled cg steps: 182
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 185
+*INFO	: decoupled residual: 7.689493744e-05
+*INFO	: decoupled constraints: 87
+*INFO	: decoupled mprgp solving time: 2.014024973
+gen A.rows() = 35832
+gen J.rows() = 235
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2415
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 194
+*INFO	: general exp steps: 806
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.060632639
+*INFO	: general constraints: 158
+*INFO	: general mprgp solving time: 158.2072144
+frame: 175
+dec A.rows() = 35832
+dec J.rows() = 97
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 813
+*INFO	: power iter: 9
+*INFO	: decoupled cg steps: 189
+*INFO	: decoupled exp steps: 0
+*INFO	: decoupled prop steps: 3
+*INFO	: decoupled total iter: 192
+*INFO	: decoupled residual: 7.35784863e-05
+*INFO	: decoupled constraints: 80
+*INFO	: decoupled mprgp solving time: 2.079102039
+gen A.rows() = 35832
+gen J.rows() = 205
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2109
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 268
+*INFO	: general exp steps: 732
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.06780414666
+*INFO	: general constraints: 120
+*INFO	: general mprgp solving time: 132.8746338
+frame: 176
+dec A.rows() = 35832
+dec J.rows() = 115
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 930
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 199
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 202
+*INFO	: decoupled residual: 7.931540329e-05
+*INFO	: decoupled constraints: 92
+*INFO	: decoupled mprgp solving time: 2.190689087
+gen A.rows() = 35832
+gen J.rows() = 270
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2790
+*INFO	: power iter: 12
+*ERROR	: general is not convergent with 1001 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 243
+*INFO	: general exp steps: 758
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1001
+*INFO	: general residual: 0.05796667123
+*INFO	: general constraints: 143
+*INFO	: general mprgp solving time: 257.6107178
+frame: 177
+dec A.rows() = 35832
+dec J.rows() = 108
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 954
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 173
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 176
+*INFO	: decoupled residual: 7.724302668e-05
+*INFO	: decoupled constraints: 87
+*INFO	: decoupled mprgp solving time: 1.896314979
+gen A.rows() = 35832
+gen J.rows() = 262
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2802
+*INFO	: power iter: 10
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 217
+*INFO	: general exp steps: 783
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.053845176
+*INFO	: general constraints: 138
+*INFO	: general mprgp solving time: 244.7303772
+frame: 178
+dec A.rows() = 35832
+dec J.rows() = 117
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 972
+*INFO	: power iter: 11
+*INFO	: decoupled cg steps: 182
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 185
+*INFO	: decoupled residual: 7.670673304e-05
+*INFO	: decoupled constraints: 93
+*INFO	: decoupled mprgp solving time: 2.014183044
+gen A.rows() = 35832
+gen J.rows() = 263
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2724
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 224
+*INFO	: general exp steps: 776
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05181194214
+*INFO	: general constraints: 150
+*INFO	: general mprgp solving time: 221.5870361
+frame: 179
+dec A.rows() = 35832
+dec J.rows() = 114
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1017
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 188
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 191
+*INFO	: decoupled residual: 7.747957589e-05
+*INFO	: decoupled constraints: 94
+*INFO	: decoupled mprgp solving time: 2.102627993
+gen A.rows() = 35832
+gen J.rows() = 230
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2409
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 343
+*INFO	: general exp steps: 657
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05409089563
+*INFO	: general constraints: 150
+*INFO	: general mprgp solving time: 138.8150482
+frame: 180
+dec A.rows() = 35832
+dec J.rows() = 118
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 975
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 195
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 198
+*INFO	: decoupled residual: 7.983353468e-05
+*INFO	: decoupled constraints: 93
+*INFO	: decoupled mprgp solving time: 5.581519127
+gen A.rows() = 35832
+gen J.rows() = 232
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2343
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 80
+*INFO	: general exp steps: 920
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05207663709
+*INFO	: general constraints: 141
+*INFO	: general mprgp solving time: 129.263916
+frame: 181
+dec A.rows() = 35832
+dec J.rows() = 114
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 927
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 185
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 188
+*INFO	: decoupled residual: 7.710376831e-05
+*INFO	: decoupled constraints: 90
+*INFO	: decoupled mprgp solving time: 5.471469879
+gen A.rows() = 35832
+gen J.rows() = 222
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2223
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1001 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 369
+*INFO	: general exp steps: 632
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1001
+*INFO	: general residual: 0.05077994372
+*INFO	: general constraints: 150
+*INFO	: general mprgp solving time: 111.5903397
+frame: 182
+dec A.rows() = 35832
+dec J.rows() = 115
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 966
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 193
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 196
+*INFO	: decoupled residual: 7.753599711e-05
+*INFO	: decoupled constraints: 93
+*INFO	: decoupled mprgp solving time: 5.567540169
+gen A.rows() = 35832
+gen J.rows() = 245
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2526
+*INFO	: power iter: 10
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 165
+*INFO	: general exp steps: 835
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05270185536
+*INFO	: general constraints: 150
+*INFO	: general mprgp solving time: 190.625473
+frame: 183
+dec A.rows() = 35832
+dec J.rows() = 121
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 957
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 184
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 187
+*INFO	: decoupled residual: 7.871243141e-05
+*INFO	: decoupled constraints: 94
+*INFO	: decoupled mprgp solving time: 5.475387096
+gen A.rows() = 35832
+gen J.rows() = 236
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2337
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 67
+*INFO	: general exp steps: 933
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05481389189
+*INFO	: general constraints: 164
+*INFO	: general mprgp solving time: 124.6782913
+frame: 184
+dec A.rows() = 35832
+dec J.rows() = 128
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1113
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 180
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 183
+*INFO	: decoupled residual: 7.845713983e-05
+*INFO	: decoupled constraints: 104
+*INFO	: decoupled mprgp solving time: 5.402391911
+gen A.rows() = 35832
+gen J.rows() = 285
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2997
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 52
+*INFO	: general exp steps: 948
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05936337012
+*INFO	: general constraints: 196
+*INFO	: general mprgp solving time: 206.4001312
+frame: 185
+dec A.rows() = 35832
+dec J.rows() = 133
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1092
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 188
+*INFO	: decoupled exp steps: 2
+*INFO	: decoupled prop steps: 3
+*INFO	: decoupled total iter: 193
+*INFO	: decoupled residual: 7.723892381e-05
+*INFO	: decoupled constraints: 100
+*INFO	: decoupled mprgp solving time: 5.547754765
+gen A.rows() = 35832
+gen J.rows() = 262
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2640
+*INFO	: power iter: 10
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 61
+*INFO	: general exp steps: 939
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.06542842936
+*INFO	: general constraints: 178
+*INFO	: general mprgp solving time: 169.9443207
+frame: 186
+dec A.rows() = 35832
+dec J.rows() = 127
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1065
+*INFO	: power iter: 1001
+*INFO	: decoupled cg steps: 186
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 189
+*INFO	: decoupled residual: 7.322395815e-05
+*INFO	: decoupled constraints: 109
+*INFO	: decoupled mprgp solving time: 5.493687153
+gen A.rows() = 35832
+gen J.rows() = 256
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 2613
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 83
+*INFO	: general exp steps: 917
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05899042202
+*INFO	: general constraints: 160
+*INFO	: general mprgp solving time: 245.0258484
+frame: 187
+dec A.rows() = 35832
+dec J.rows() = 148
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1308
+*INFO	: power iter: 859
+*INFO	: decoupled cg steps: 188
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 191
+*INFO	: decoupled residual: 7.4257301e-05
+*INFO	: decoupled constraints: 117
+*INFO	: decoupled mprgp solving time: 5.012708187
+gen A.rows() = 35832
+gen J.rows() = 330
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 3492
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 56
+*INFO	: general exp steps: 944
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.08809225349
+*INFO	: general constraints: 188
+*INFO	: general mprgp solving time: 483.712738
+frame: 188
+dec A.rows() = 35832
+dec J.rows() = 141
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1287
+*INFO	: power iter: 8
+*INFO	: decoupled cg steps: 202
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 205
+*INFO	: decoupled residual: 7.986514739e-05
+*INFO	: decoupled constraints: 121
+*INFO	: decoupled mprgp solving time: 2.206933975
+gen A.rows() = 35832
+gen J.rows() = 325
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 3495
+*INFO	: power iter: 8
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 58
+*INFO	: general exp steps: 942
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.09214526656
+*INFO	: general constraints: 192
+*INFO	: general mprgp solving time: 342.6771545
+frame: 189
+dec A.rows() = 35832
+dec J.rows() = 172
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1497
+*INFO	: power iter: 12
+*INFO	: decoupled cg steps: 197
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 200
+*INFO	: decoupled residual: 7.618502064e-05
+*INFO	: decoupled constraints: 141
+*INFO	: decoupled mprgp solving time: 2.184540033
+gen A.rows() = 35832
+gen J.rows() = 370
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 3873
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 51
+*INFO	: general exp steps: 949
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.08021343347
+*INFO	: general constraints: 248
+*INFO	: general mprgp solving time: 459.9159851
+frame: 190
+dec A.rows() = 35832
+dec J.rows() = 152
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1401
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 198
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 201
+*INFO	: decoupled residual: 6.568905206e-05
+*INFO	: decoupled constraints: 127
+*INFO	: decoupled mprgp solving time: 2.182225943
+gen A.rows() = 35832
+gen J.rows() = 320
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 3417
+*INFO	: power iter: 9
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 69
+*INFO	: general exp steps: 931
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05483329724
+*INFO	: general constraints: 209
+*INFO	: general mprgp solving time: 382.2101135
+frame: 191
+dec A.rows() = 35832
+dec J.rows() = 158
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1392
+*INFO	: power iter: 13
+*INFO	: decoupled cg steps: 190
+*INFO	: decoupled exp steps: 2
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 194
+*INFO	: decoupled residual: 7.881907334e-05
+*INFO	: decoupled constraints: 127
+*INFO	: decoupled mprgp solving time: 2.123857975
+gen A.rows() = 35832
+gen J.rows() = 331
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 3468
+*INFO	: power iter: 12
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 55
+*INFO	: general exp steps: 945
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.06039674458
+*INFO	: general constraints: 219
+*INFO	: general mprgp solving time: 337.914978
+frame: 192
+dec A.rows() = 35832
+dec J.rows() = 168
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1530
+*INFO	: power iter: 13
+*INFO	: decoupled cg steps: 192
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 1
+*INFO	: decoupled total iter: 194
+*INFO	: decoupled residual: 7.6895859e-05
+*INFO	: decoupled constraints: 138
+*INFO	: decoupled mprgp solving time: 2.104682922
+gen A.rows() = 35832
+gen J.rows() = 367
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 3918
+*INFO	: power iter: 13
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 68
+*INFO	: general exp steps: 932
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.05176842019
+*INFO	: general constraints: 224
+*INFO	: general mprgp solving time: 474.3513489
+frame: 193
+dec A.rows() = 35832
+dec J.rows() = 163
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1470
+*INFO	: power iter: 12
+*INFO	: decoupled cg steps: 172
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 175
+*INFO	: decoupled residual: 7.969906375e-05
+*INFO	: decoupled constraints: 139
+*INFO	: decoupled mprgp solving time: 1.924203992
+gen A.rows() = 35832
+gen J.rows() = 376
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 4026
+*INFO	: power iter: 12
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 58
+*INFO	: general exp steps: 942
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.07067700144
+*INFO	: general constraints: 217
+*INFO	: general mprgp solving time: 522.0203857
+frame: 194
+dec A.rows() = 35832
+dec J.rows() = 175
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1596
+*INFO	: power iter: 12
+*INFO	: decoupled cg steps: 204
+*INFO	: decoupled exp steps: 1
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 207
+*INFO	: decoupled residual: 7.656496164e-05
+*INFO	: decoupled constraints: 149
+*INFO	: decoupled mprgp solving time: 2.257090092
+gen A.rows() = 35832
+gen J.rows() = 401
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 4308
+*INFO	: power iter: 11
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 54
+*INFO	: general exp steps: 946
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.08656699356
+*INFO	: general constraints: 257
+*INFO	: general mprgp solving time: 657.6985474
+frame: 195
+dec A.rows() = 35832
+dec J.rows() = 164
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1590
+*INFO	: power iter: 13
+*INFO	: decoupled cg steps: 192
+*INFO	: decoupled exp steps: 2
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 196
+*INFO	: decoupled residual: 7.019114779e-05
+*INFO	: decoupled constraints: 134
+*INFO	: decoupled mprgp solving time: 2.163034916
+gen A.rows() = 35832
+gen J.rows() = 386
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 4254
+*INFO	: power iter: 13
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 56
+*INFO	: general exp steps: 944
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.0614843889
+*INFO	: general constraints: 233
+*INFO	: general mprgp solving time: 551.8387451
+frame: 196
+dec A.rows() = 35832
+dec J.rows() = 190
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1569
+*INFO	: power iter: 10
+*INFO	: decoupled cg steps: 189
+*INFO	: decoupled exp steps: 2
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 193
+*INFO	: decoupled residual: 7.941328426e-05
+*INFO	: decoupled constraints: 163
+*INFO	: decoupled mprgp solving time: 2.116837978
+gen A.rows() = 35832
+gen J.rows() = 389
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 3957
+*INFO	: power iter: 10
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 54
+*INFO	: general exp steps: 946
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.06910448537
+*INFO	: general constraints: 254
+*INFO	: general mprgp solving time: 552.9012451
+frame: 197
+dec A.rows() = 35832
+dec J.rows() = 170
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1626
+*INFO	: power iter: 12
+*INFO	: decoupled cg steps: 202
+*INFO	: decoupled exp steps: 2
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 206
+*INFO	: decoupled residual: 7.63970252e-05
+*INFO	: decoupled constraints: 136
+*INFO	: decoupled mprgp solving time: 2.25602293
+gen A.rows() = 35832
+gen J.rows() = 398
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 4362
+*INFO	: power iter: 12
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 52
+*INFO	: general exp steps: 948
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.0761582251
+*INFO	: general constraints: 235
+*INFO	: general mprgp solving time: 712.303894
+frame: 198
+dec A.rows() = 35832
+dec J.rows() = 200
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1617
+*INFO	: power iter: 12
+*INFO	: decoupled cg steps: 201
+*INFO	: decoupled exp steps: 2
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 205
+*INFO	: decoupled residual: 7.585852389e-05
+*INFO	: decoupled constraints: 163
+*INFO	: decoupled mprgp solving time: 2.238858938
+gen A.rows() = 35832
+gen J.rows() = 407
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 4101
+*INFO	: power iter: 12
+*ERROR	: general is not convergent with 1000 iterations.
+	 at	: file:/home/simba/Workspace/MPRGP/src/MPRGPSolver/MPRGPSolver.h::449
+*INFO	: general cg steps: 50
+*INFO	: general exp steps: 950
+*INFO	: general prop steps: 0
+*INFO	: general total iter: 1000
+*INFO	: general residual: 0.06455320032
+*INFO	: general constraints: 251
+*INFO	: general mprgp solving time: 882.8374023
+frame: 199
+dec A.rows() = 35832
+dec J.rows() = 169
+dec A.nonZeros() = 1243368
+dec J.nonZeros() = 1686
+*INFO	: power iter: 12
+*INFO	: decoupled cg steps: 214
+*INFO	: decoupled exp steps: 2
+*INFO	: decoupled prop steps: 2
+*INFO	: decoupled total iter: 218
+*INFO	: decoupled residual: 7.743738875e-05
+*INFO	: decoupled constraints: 150
+*INFO	: decoupled mprgp solving time: 2.388403893
+gen A.rows() = 35832
+gen J.rows() = 403
+gen A.nonZeros() = 1243368
+gen J.nonZeros() = 4494
+*INFO	: power iter: 12
