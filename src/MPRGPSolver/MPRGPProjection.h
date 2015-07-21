@@ -250,6 +250,7 @@ namespace MATH{
 	  assert_eq(c.size(), J.rows());
 	  face.resize(J.rows());
 	  face.assign(face.size(),char(0));
+	  num_active_cons = 0;
 	}
 	const vector<char> &getFace()const{
 	  return face;
@@ -285,10 +286,13 @@ namespace MATH{
 	  assert_eq(c.size(), J.rows());
 	  face.assign(c.size(),char(0));
 	  const Vec Jx = J*x;
+	  num_active_cons = 0;
 	  OMP_PARALLEL_FOR_
 		for(int i = 0; i < c.size(); i++){
-		  if(abs(Jx[i]-c[i]) < ScalarUtil<T>::scalar_eps)
+		  if(abs(Jx[i]-c[i]) < ScalarUtil<T>::scalar_eps){
 			face[i] = 1;
+			num_active_cons ++;
+		  }
 		}
 	}
 	bool isFeasible(const Vec &x)const{
@@ -309,6 +313,7 @@ namespace MATH{
 	const SparseMatrix<T> &J;
 	const Vec &c;
 	vector<char> face;
+	int num_active_cons;
   };
 
   // support decoupled constraints: J*x >= c, where J*J^t is diagonal.
@@ -319,6 +324,7 @@ namespace MATH{
 	using BaseGeneralConProjector<T>::J;
 	using BaseGeneralConProjector<T>::c;
 	using BaseGeneralConProjector<T>::face;
+	using BaseGeneralConProjector<T>::num_active_cons;
 	
   public:
 	DecoupledConProjector(const SparseMatrix<T> &J, const Vec &JJt, const Vec &c):
@@ -342,11 +348,11 @@ namespace MATH{
 	}
 	void PHI(const Vec &g,Vec &phi) const{
 
-	  ///@todo
-	  // if(J_active.rows() == 0){
-	  // 	phi = g;
-	  // 	return ;
-	  // }
+	  assert_in(num_active_cons, 0, (int)face.size());
+	  if(num_active_cons == 0){
+	  	phi = g;
+	  	return ;
+	  }
 	  Vec lambda = J*g;
 	  assert_eq(J.cols(), g.size());
 	  assert_eq(lambda.size(), (int)face.size());
@@ -361,11 +367,11 @@ namespace MATH{
 	}
 	void BETA(const Vec &g, Vec &beta, const Vec &phi){
 
-	  /// @todo
-	  // if(J_active.rows() == 0){
-	  // 	beta = g-phi;
-	  // 	return;
-	  // }
+	  assert_in(num_active_cons, 0, (int)face.size());
+	  if(num_active_cons == 0){
+	  	beta = g-phi;
+	  	return;
+	  }
 	  ///@todo
 	  beta = g-phi;
 	  Vec lambda = J*beta;

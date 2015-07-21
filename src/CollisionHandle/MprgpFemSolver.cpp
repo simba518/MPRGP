@@ -494,8 +494,14 @@ void DecoupledMprgpFemSolver::forward(const double dt){
   _LHS.reset(nrVar(),nrVar(),false);
   _U.reset(nrVarF(),nrVar(),false);
 
-  SparseMatrix<double> J;
-  VectorXd c;
+  SparseMatrix<double> J, J_full;
+  VectorXd c, c_full;
+  if(ccd_collider) ccd_collider->setDecoupleConstraints(false);
+  if(dcd_collider) dcd_collider->setDecoupleConstraints(false);
+  getCollConstraints(J_full,c_full);
+
+  if(ccd_collider) ccd_collider->setDecoupleConstraints(true);
+  if(dcd_collider) dcd_collider->setDecoupleConstraints(true);
   getCollConstraints(J,c);
 
   const SparseMatrix<double> JJt_mat = J*J.transpose();
@@ -510,7 +516,8 @@ void DecoupledMprgpFemSolver::forward(const double dt){
   for (int i = 0; i < maxIter; i++) {
 
 	buildLinearSystem(LHS_mat, RHS, dt);
-	// saveQP(J, c, RHS);
+	saveQP(J, c, RHS, "dec");
+	saveQP(J_full, c_full, RHS, "full");
 
 	timer.start();
 	projector.project(x1, new_pos);

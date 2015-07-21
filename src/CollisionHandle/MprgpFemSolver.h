@@ -126,9 +126,9 @@ protected:
   double updatePos();
   void updateMesh(const double dt);
   void buildLinearSystem(Eigen::SparseMatrix<double> &LHS, VectorXd &RHS, const double dt);
-  void saveQP(const SparseMatrix<double> &J,const VectorXd &c,const VectorXd &RHS)const{
+  void saveQP(const SparseMatrix<double> &J,const VectorXd &c,const VectorXd &RHS,const string et="")const{
 	ostringstream oss;
-	oss << saveResultsTo()+"/QP/qp"<< currentFrame() << ".b";
+	oss << saveResultsTo()+"/QP/qp"<< et << currentFrame() << ".b";
 	writeQP(LHS_mat, RHS, J, c, x1, oss.str());
   }
 

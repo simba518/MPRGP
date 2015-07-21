@@ -10,9 +10,9 @@
 
 # ./bin/release/collision_handle ./data/dino/cubes.ini  >  tempt/dino_cubes.txt
 
-# ./bin/release/collision_handle ./data/dino/two_decoupled.ini  >  tempt/dino_two_decoupled.txt
+./bin/release/collision_handle ./data/dino/two_decoupled.ini  >  tempt/dino_two_decoupled.txt
 
-./bin/release/collision_handle ./data/dino/two_general.ini  >  tempt/dino_two_general.txt
+# ./bin/release/collision_handle ./data/dino/two_general.ini  >  tempt/dino_two_general.txt
 
 # ./bin/release/collision_handle ./data/bunny/two.ini  >  tempt/bunny_two.txt
 
