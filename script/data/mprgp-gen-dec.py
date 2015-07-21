@@ -26,4 +26,4 @@ trace2 = Scatter(
     y=decoupled_mprgp
 )
 data = Data([trace1, trace2])
-# plot_url = py.plot(data, filename='decoupled_general_comp')
+plot_url = py.plot(data, filename='decoupled_general_comp')
