@@ -24,16 +24,16 @@ BOOST_AUTO_TEST_CASE(compare){
   
   UTILITY::Timer timer;
   const string project_dir = "/home/simba/Workspace/MPRGP/";
-  const string qp_base = project_dir+"/data/dino/tempt_cubes_decoupled/QP/";
+  const string qp_base = project_dir+"/data/dino/tempt_cubes_decoupled_back/QP/";
 
   const double tol = 8e-5; // *B.norm()
   const int max_it = 1000;
 
   typedef FixedSparseMatrix<double> MAT;
-  const int T = 140;
+  const int T = 400;
   SparseMatrix<double> A, J;
   VectorXd B, c, init_x, dec_ev, gen_ev;
-  for (int f = 100; f < T ; ++f){
+  for (int f = 0; f < T ; ++f){
 
 	cout << "frame: " << f << endl;
 	{// decoupled mprgp

@@ -9,3 +9,4 @@ build
 lib
 *.vtk
 *log*
+./scirpt/*.pyc
