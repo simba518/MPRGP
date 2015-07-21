@@ -496,20 +496,25 @@ void DecoupledMprgpFemSolver::forward(const double dt){
 
   SparseMatrix<double> J, J_full;
   VectorXd c, c_full;
-  if(ccd_collider) ccd_collider->setDecoupleConstraints(false);
-  if(dcd_collider) dcd_collider->setDecoupleConstraints(false);
-  getCollConstraints(J_full,c_full);
-
-  if(ccd_collider) ccd_collider->setDecoupleConstraints(true);
-  if(dcd_collider) dcd_collider->setDecoupleConstraints(true);
-  getCollConstraints(J,c);
-
+  {
+	if(ccd_collider) ccd_collider->setDecoupleConstraints(false);
+	if(dcd_collider) dcd_collider->setDecoupleConstraints(false);
+	handleCollDetection(dt);
+	getCollConstraints(J_full,c_full);
+	INFO_LOG("J_full.rows(), nz: " << J_full.rows()<< ", " << J_full.nonZeros());
+  }
+  {
+	if(ccd_collider) ccd_collider->setDecoupleConstraints(true);
+	if(dcd_collider) dcd_collider->setDecoupleConstraints(true);
+	handleCollDetection(dt);
+	getCollConstraints(J,c);
+	INFO_LOG("J.rows(), nz: " << J.rows()<< ", " << J.nonZeros());
+  }
   const SparseMatrix<double> JJt_mat = J*J.transpose();
   assert_eq_ext(JJt_mat.nonZeros(), J.rows(), "Matrix J is not decoupled.\n" << J);
   Vec JJt;
   MATH::getDiagonal(JJt_mat, JJt);
   DecoupledConProjector<double> projector(J, JJt, c);
-  INFO_LOG("J.rows(): " << J.rows());
 
   UTILITY::Timer timer;
   const VectorXd last_pos = x1;

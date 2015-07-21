@@ -138,7 +138,7 @@ void SurfaceSelfConCache::getConstraints(TRIPS &trips, vector<double> &rhs, cons
 }
 
 void LinearConCollider::handle(boost::shared_ptr<FEMBody> b, const Vector4d &plane, const double delta){
-  
+
   for (int i = 0; i < (int)b->nrV(); ++i){
 	const boost::shared_ptr<FEMVertex> v = b->getVPtr(i);
 	const Vec3d n = plane.segment<3>(0);
