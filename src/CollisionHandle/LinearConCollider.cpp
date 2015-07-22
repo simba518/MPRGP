@@ -288,6 +288,7 @@ void ContinueCollider::handle(boost::shared_ptr<ClothMesh::ClothVertex> V1,
 		coll_as_face[one_con.j] = true;
 		coll_as_face[one_con.k] = true;
 		coll_as_face[one_con.l] = true;
+		ClothCollision::CollisionHandler::handle(V1,T2,normal,omg,t);
 	  }
 	}else{
 	  const int old_size = (int)geom_con.size();
@@ -315,7 +316,6 @@ void ContinueCollider::handle(boost::shared_ptr<ClothMesh::ClothEdge> E1,
 							  const Vec3d normal,const Vec4d& omg,scalarD t){
 
   // ClothCollision::CollisionHandler::handle(E1,E2,normal,omg,t);
-
   Vec3d n = E2->getNormal().normalized();
   if (ClothMesh::CLOTH_MESH == E2->_type){
 	n = -n;

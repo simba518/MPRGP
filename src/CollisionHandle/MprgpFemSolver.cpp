@@ -482,7 +482,7 @@ void ICAFemSolver::forward(const double dt){
 	if (updatePos() < eps)
 	  break;
   }
-  computeFrictionForces(RHS, last_pos, new_pos, dt);
+  // computeFrictionForces(RHS, last_pos, new_pos, dt);///@bug core dumped under CCD
 }
 
 void DecoupledMprgpFemSolver::forward(const double dt){
@@ -497,16 +497,16 @@ void DecoupledMprgpFemSolver::forward(const double dt){
   SparseMatrix<double> J, J_full;
   VectorXd c, c_full;
   {
-	if(ccd_collider) ccd_collider->setDecoupleConstraints(false);
-	if(dcd_collider) dcd_collider->setDecoupleConstraints(false);
-	handleCollDetection(dt);
-	getCollConstraints(J_full,c_full);
-	INFO_LOG("J_full.rows(), nz: " << J_full.rows()<< ", " << J_full.nonZeros());
+	// if(ccd_collider) ccd_collider->setDecoupleConstraints(false);
+	// if(dcd_collider) dcd_collider->setDecoupleConstraints(false);
+	// handleCollDetection(dt);
+	// getCollConstraints(J_full,c_full);
+	// INFO_LOG("J_full.rows(), nz: " << J_full.rows()<< ", " << J_full.nonZeros());
   }
   {
-	if(ccd_collider) ccd_collider->setDecoupleConstraints(true);
-	if(dcd_collider) dcd_collider->setDecoupleConstraints(true);
-	handleCollDetection(dt);
+	// if(ccd_collider) ccd_collider->setDecoupleConstraints(true);
+	// if(dcd_collider) dcd_collider->setDecoupleConstraints(true);
+	// handleCollDetection(dt);
 	getCollConstraints(J,c);
 	INFO_LOG("J.rows(), nz: " << J.rows()<< ", " << J.nonZeros());
   }
@@ -534,7 +534,7 @@ void DecoupledMprgpFemSolver::forward(const double dt){
 	if (updatePos() < eps)
 	  break;
   }
-  computeFrictionForces(RHS, last_pos, new_pos, dt);
+  // computeFrictionForces(RHS, last_pos, new_pos, dt);///@bug core dumped under CCD
 }
 
 void GeneralMprgpFemSolver::forward(const double dt){
@@ -570,5 +570,5 @@ void GeneralMprgpFemSolver::forward(const double dt){
 	if (updatePos() < eps)
 	  break;
   }
-  computeFrictionForces(RHS, last_pos, new_pos, dt);
+  // computeFrictionForces(RHS, last_pos, new_pos, dt); ///@bug core dumped under CCD
 }
