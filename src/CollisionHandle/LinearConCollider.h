@@ -82,6 +82,7 @@ public:
 
   void reset(const size_t num_verts){
 
+	count = 0;
 	linear_con.clear();
 	linear_con.resize(num_verts);
 	geom_con.clear();
@@ -125,6 +126,7 @@ protected:
   vector<SurfaceSelfConCache> surface_self_con;
   bool decouple_constraints; // if true, one constraint for each triangle and each vertex.
   vector<bool> coll_as_vert, coll_as_face;
+  int count;
 };
 
 class ContinueCollider:public LinearConCollider, public ClothCollision::CollisionHandler{

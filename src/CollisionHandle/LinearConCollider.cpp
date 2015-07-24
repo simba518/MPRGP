@@ -247,16 +247,21 @@ void ContinueCollider::handle(boost::shared_ptr<ClothMesh::ClothVertex> V1,
 							  boost::shared_ptr<ClothMesh::ClothTriangle> T2,
 							  const Vec3d normal,const Vec4d& omg,scalarD t){
 
+  // return ;
   // ClothCollision::CollisionHandler::handle(V1,T2,normal,omg,t);
-  Vec3d n = T2->getNormal().normalized();
-  if (ClothMesh::CLOTH_MESH == T2->_type){
-  	n = -n;
-  }
-  if (n.dot(normal) > 0){
-  	n = normal;
-  }else{
-	return;
-  }
+  // Vec3d n = T2->getNormal().normalized();
+  Vec3d n = normal;
+//   if (ClothMesh::CLOTH_MESH == T2->_type){
+//   	n = -n;
+//   }
+//   if (n.dot(normal) > 0){
+//   	n = normal;
+//   }else{
+// 	 /// @todo tempt information///////////////////////////////
+// #include <iostream>
+// 	std::cout << std::endl << "temp print ******************  000" << std::endl;
+// 	return;
+//   }
   if(ClothMesh::CLOTH_MESH == V1->_type){
 
 	const int body_1 = V1->body_index;
@@ -289,8 +294,14 @@ void ContinueCollider::handle(boost::shared_ptr<ClothMesh::ClothVertex> V1,
 		coll_as_face[one_con.k] = true;
 		coll_as_face[one_con.l] = true;
 		ClothCollision::CollisionHandler::handle(V1,T2,normal,omg,t);
+	  }else{
+		count++;
+		cout<< "ignored: " << count << endl;
 	  }
 	}else{
+	   /// @todo tempt information///////////////////////////////
+#include <iostream>
+	  std::cout << std::endl << "temp print ******************  oo" << std::endl;
 	  const int old_size = (int)geom_con.size();
 	  boost::shared_ptr<FEMVertex> v = body->getVPtr(vert_1);
 	  LinearConCollider::handle(body,v,n);
@@ -308,6 +319,10 @@ void ContinueCollider::handle(boost::shared_ptr<ClothMesh::ClothVertex> V1,
 		linear_con[lid][k][3] = n.dot(v1)*a + n.dot(v2)*b + n.dot(v3)*c;
 	  }
 	}
+  }else{
+	 /// @todo tempt information///////////////////////////////
+#include <iostream>
+	std::cout << std::endl << "temp print ******************  0" << std::endl;
   }
 }
 
@@ -315,16 +330,20 @@ void ContinueCollider::handle(boost::shared_ptr<ClothMesh::ClothEdge> E1,
 							  boost::shared_ptr<ClothMesh::ClothEdge> E2,
 							  const Vec3d normal,const Vec4d& omg,scalarD t){
 
+  Vec3d n = normal;
   // ClothCollision::CollisionHandler::handle(E1,E2,normal,omg,t);
-  Vec3d n = E2->getNormal().normalized();
-  if (ClothMesh::CLOTH_MESH == E2->_type){
-	n = -n;
-  }
-  if(n.dot(normal) > 0){
-	n = normal;
-  }else{
-	return;
-  }
+//   Vec3d n = E2->getNormal().normalized();
+//   if (ClothMesh::CLOTH_MESH == E2->_type){
+// 	n = -n;
+//   }
+//   if(n.dot(normal) > 0){
+// 	n = normal;
+//   }else{
+// 	 /// @todo tempt information///////////////////////////////
+// #include <iostream>
+// 	std::cout << std::endl << "temp print ******************  kkkk" << std::endl;
+// 	return;
+//   }
 
   if(ClothMesh::CLOTH_MESH == E1->_type){
 	if( (ClothMesh::CLOTH_MESH == E2->_type) ){
@@ -356,8 +375,20 @@ void ContinueCollider::handle(boost::shared_ptr<ClothMesh::ClothEdge> E1,
 		coll_as_face[one_con.j] = true;
 		coll_as_face[one_con.k] = true;
 		coll_as_face[one_con.l] = true;
+		ClothCollision::CollisionHandler::handle(E1,E2,normal,omg,t);///@todo debug
+	  }else{
+		count ++;
+		cout << "ignored: " << count << endl;
 	  }
+	}else{
+	   /// @todo tempt information///////////////////////////////
+#include <iostream>
+	  std::cout << std::endl << "temp print ******************  pppp" << std::endl;
 	}
+  }else{
+	 /// @todo tempt information///////////////////////////////
+#include <iostream>
+	std::cout << std::endl << "temp print ******************  oooo" << std::endl;
   }
 }
 
@@ -423,20 +454,20 @@ void ContinueCollider::init(){
 	mesh.write("tempt_scene.obj");
   }
 
-
   CCD.addMesh(surface);
   CCD.addMesh(scene);
 }
 
 void ContinueCollider::collide(const VectorXd &last_pos, const VectorXd &cur_pos){
 
+  count = 0;
   for (int i = 0; i < (int)vol_cloth_map.size(); ++i){
 	const int vert_id = vol_cloth_map[i].second;
 	const int node_id = vol_cloth_map[i].first;
 	surface->_vss[vert_id]->_lastPos = last_pos.segment<3>(node_id*3);
 	surface->_vss[vert_id]->_pos = cur_pos.segment<3>(node_id*3);
   }
-
+  
   CCD.collide(*this);
 
 }

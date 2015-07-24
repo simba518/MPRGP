@@ -399,7 +399,8 @@ void Simulator::run(){
 	  fem_solver->getMesh().getB(i).writeABQ(ossm_abq.str());
 	}
 
-  	fem_solver->advance( timeStep() );
+	if(frame != totalFrames()-1)
+	  fem_solver->advance( timeStep() );
   }
 }
 
