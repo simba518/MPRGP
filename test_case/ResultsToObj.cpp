@@ -11,6 +11,12 @@ using namespace boost::filesystem;
 using namespace UTILITY;
 USE_PRJ_NAMESPACE
 
+float ScalarUtil<float>::scalar_max=FLT_MAX;
+float ScalarUtil<float>::scalar_eps=1E-5f;
+
+double ScalarUtil<double>::scalar_max=DBL_MAX;
+double ScalarUtil<double>::scalar_eps=1E-9;
+
 void vtkToObj(const string in, const string out){
 
   
@@ -25,16 +31,16 @@ VectorXd loadAbqNodes(const string abq_file, const int n){
   string line;
   getline(is,line);
   while(is.good()) {
-	if(beginsWith(line,"*NODE")) {
-	  while(getline(is,line).good() && !line.empty() && line[0] != '*') {
-		double x,y,z;
-		istringstream iss(line);
-		iss >> id >> comma >> x >> comma >> y >> comma >> z;
-		nodes[id*3-3] = x;
-		nodes[id*3-2] = y;
-		nodes[id*3-1] = z;
-	  }
-	}else getline(is,line);
+  	if(beginsWith(line,"*NODE")) {
+  	  while(getline(is,line).good() && !line.empty() && line[0] != '*') {
+  		double x,y,z;
+  		istringstream iss(line);
+  		iss >> id >> comma >> x >> comma >> y >> comma >> z;
+  		nodes[id*3-3] = x;
+  		nodes[id*3-2] = y;
+  		nodes[id*3-1] = z;
+  	  }
+  	}else getline(is,line);
   }
   return nodes;
 }
@@ -50,47 +56,47 @@ void abqInterpolateObj(pTetMeshEmbeding embed, const VectorXd &rest_shape,
 void saveAsObjFiles(const string m_path,const bool interp=false,const string model=""){
 
   { // abq to obj
-	const string abq_fold = m_path+"/abq/";
-	const string obj_fold = m_path+"/obj/";
-	create_directory(obj_fold);
+  	const string abq_fold = m_path+"/abq/";
+  	const string obj_fold = m_path+"/obj/";
+  	create_directory(obj_fold);
 
-	pTetMeshEmbeding embed;
-	VectorXd rest_shape;
-	if(interp){
-	  const string rest_tet = model+"/model/mesh.abq";
-	  const string rest_obj = model+"/model/mesh.obj";
+  	pTetMeshEmbeding embed;
+  	VectorXd rest_shape;
+  	if(interp){
+  	  const string rest_tet = model+"/model/mesh.abq";
+  	  const string rest_obj = model+"/model/mesh.obj";
 
-	  pTetMesh tetMesh = pTetMesh(new TetMesh());
-	  pObjmesh objMesh = pObjmesh(new Objmesh());
-	  tetMesh->load(rest_tet);
-	  objMesh->load(rest_obj);
-	  tetMesh->nodes(rest_shape);
+  	  pTetMesh tetMesh = pTetMesh(new TetMesh());
+  	  pObjmesh objMesh = pObjmesh(new Objmesh());
+  	  tetMesh->load(rest_tet);
+  	  objMesh->load(rest_obj);
+  	  tetMesh->nodes(rest_shape);
 
-	  embed = pTetMeshEmbeding(new TetMeshEmbeding(tetMesh, objMesh));
-	  embed->buildInterpWeights();
-	}
+  	  embed = pTetMeshEmbeding(new TetMeshEmbeding(tetMesh, objMesh));
+  	  embed->buildInterpWeights();
+  	}
 
     directory_iterator end_itr;
-	path p (abq_fold.c_str());
+  	path p (abq_fold.c_str());
     for (directory_iterator itr(p); itr != end_itr; ++itr) {
-	  if ( is_regular_file(itr->path()) ) {
-		const string file_name = itr->path().filename().string();
-		// if (file_name != "obj_0_frame_0.abq")
-		//   continue;
-		const string abq_file = abq_fold+file_name;
-		const string obj_file = obj_fold+file_name.substr(0,file_name.size()-3)+"obj";
-		if (boost::filesystem::exists(obj_file)){
-		  continue;
-		}
-		cout << abq_file << endl;
-		cout << obj_file << endl;
-		if (!interp){
-		  FEMMeshFormat::ABQToObj(abq_file, obj_file);
-		}else{
-		  abqInterpolateObj(embed, rest_shape, abq_file, obj_file);
-		}
-	  }
-	}
+  	  if ( is_regular_file(itr->path()) ) {
+  		const string file_name = itr->path().filename().string();
+  		// if (file_name != "obj_0_frame_0.abq")
+  		//   continue;
+  		const string abq_file = abq_fold+file_name;
+  		const string obj_file = obj_fold+file_name.substr(0,file_name.size()-3)+"obj";
+  		if (boost::filesystem::exists(obj_file)){
+  		  continue;
+  		}
+  		cout << abq_file << endl;
+  		cout << obj_file << endl;
+  		if (!interp){
+  		  // FEMMeshFormat::ABQToObj(abq_file, obj_file); ///@bug compile failed
+  		}else{
+  		  abqInterpolateObj(embed, rest_shape, abq_file, obj_file);
+  		}
+  	  }
+  	}
   }
 
 }
@@ -99,7 +105,10 @@ BOOST_AUTO_TEST_SUITE(ResultsToObj)
 
 BOOST_AUTO_TEST_CASE(ResultsToObj){
 
-  // saveAsObjFiles("./data/dino/tempt_cubes_test",true,"./data/dino/");
+  saveAsObjFiles("./data/dino/tempt_two_mprgp_h005_coarse",true,"./data/dino/");
+  saveAsObjFiles("./data/dino/tempt_two_mprgp_h002_coarse",true,"./data/dino/");
+  saveAsObjFiles("./data/dino/tempt_two_mprgp_h01_coarse",true,"./data/dino/");
+
   // saveAsObjFiles("./data/dragon/tempt_stair");
   // saveAsObjFiles("./data/bunny/tempt_one2");
   // saveAsObjFiles("./data/longcube/tempt_ica");

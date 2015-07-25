@@ -278,13 +278,13 @@ namespace UTILITY{
 
 	void createVertexCells(){
 	  if (_binary){
-		for (int i = 0; i < _nPoint; ++i){
+		for (int i = 0; i < (int)_nPoint; ++i){
 		  vtkWriteBinary(_cells,1);
 		  vtkWriteBinary(_cells,i);
 		  vtkWriteBinary(_cellTypes,1);
 		}
 	  }else{
-		for (int i = 0; i < _nPoint; ++i){
+		for (int i = 0; i < (int)_nPoint; ++i){
 		  _cells<<1<< " " << i << endl;
 		  _cellTypes << 1 << " ";
 		}

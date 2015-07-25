@@ -21,8 +21,8 @@ TARGET_LINK_LIBRARIES(${APP_NAME}
   )
 
 SET(LIBRARY_NAME mprgp)
-# SET(lib_src ${utility_src} ${commonfile_src} ${collisionhandle_src} ${qp_src})
-SET(lib_src ${qp_src})
+SET(lib_src ${utility_src} ${commonfile_src} ${collisionhandle_src} ${qp_src})
+# SET(lib_src ${qp_src})
 LIST(REMOVE_ITEM lib_src ./CollisionHandle/main.cpp)
 ADD_LIBRARY(${LIBRARY_NAME} ${lib_src})
 
