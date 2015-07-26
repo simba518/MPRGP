@@ -5,7 +5,8 @@ AUX_SOURCE_DIRECTORY(. collisionhandle_test_src)
 ADD_EXECUTABLE(${APPNAME} 
   # ${collisionhandle_test_src}
   main.cpp
-  ResultsToObj.cpp
+  MPRGP_ICA_Compare.cpp
+  # ResultsToObj.cpp
   # ConvergencyCompare.cpp
   # MPRGPTest.cpp
   # GeneralDecoupledCompare.cpp
