@@ -2,7 +2,7 @@ import maya.cmds as cmds
 
 def selectDir():
 	basicFilter = "*.obj"
-	filename=cmds.fileDialog2(fileMode=4,ds=1, caption="Select Sequence",fileFilter=basicFilter)
+	filename=cmds.fileDialog2(fileMode=4,ds=1,caption="Select Sequence",fileFilter=basicFilter)
 	uniToStr=str(filename)
 	global objList
 	filePath=uniToStr.split("'")
