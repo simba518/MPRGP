@@ -11,6 +11,8 @@ for inif in init_files:
         continue
     if inif.find("two_") < 0 or inif.find('mprgp_') < 0 or inif.find('mprgp_h') >= 0:
         continue
+    if inif.find("20044") < 0 && inif.find("2790") < 0:
+        continue
     f = init_files_dir + inif + " "
     cmmd = "./bin/release/collision_handle " + f + " > ./tempt/" + inif + ".txt"
     print cmmd
