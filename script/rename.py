@@ -29,6 +29,8 @@ def reName(dir_name,ext = "*.obj"):
 
 # reName("./data/dino/tempt_cubes_test/obj/")
 # reName("./data/dragon/tempt_stair/obj/")
-reName("./data/bunny/tempt_one2/obj/")
+reName("/home/simba/D/PG_Data/h01/")
+reName("/home/simba/D/PG_Data/h005/")
+reName("/home/simba/D/PG_Data/h002/")
 # reName("./data/longcube/tempt_ica/obj/")
 # reName("./data/longcube/tempt_ica2/obj/")
